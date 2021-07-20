@@ -1,7 +1,7 @@
-# Личный проект «Мишка» 
+# Личный проект «Мишка»
 
-* Студент: [Рамзан Курбанов](https://up.htmlacademy.ru/adaptive/23/user/1773559).
-* Наставник: `Неизвестно`.
+- Студент: [Рамзан Курбанов](https://up.htmlacademy.ru/adaptive/23/user/1773559).
+- Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
