@@ -63,7 +63,6 @@
       </section>
       <section class="production-process">
         <h2>Процесс<br>производства</h2>
-        <!--<img src="img/catalog/production-video.jpg" width="260" height="150" alt="">-->
         <video width="260" height="150" poster="img/catalog/production-video.jpg">
         </video>
         <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -94,5 +93,30 @@
         </div>
       </div>
     </footer>
+    <section class="modal visually-hidden">
+      <div class="modal__wrapper">
+        <form class="add-to-cart">
+          <h2>Добавить <br>в корзину</h2>
+          <fieldset>
+            <legend class="add-to-cart__select-size" for="size">Выберите размер:</legend>
+            <ul class="add-to-cart__list">
+              <li class="add-to-cart__item">
+                <input class="add-to-cart__size add-to-cart__size--active" id="s-size" type="radio" name="s-size" checked>
+                <label for="s-size">S</label>
+              </li>
+              <li class="add-to-cart__item">
+                <input class="add-to-cart__size" id="m-size" type="radio" name="m-size">
+                <label for="m-size">M</label>
+              </li>
+              <li class="add-to-cart__item">
+                <input class="add-to-cart__size" id="l-size" type="radio" name="l-size">
+                <label for="l-size">L</label>
+              </li>
+            </ul>
+            <button class="add-to-cart__add" type="submit">Добавить</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
