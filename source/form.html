@@ -40,7 +40,7 @@
       <h1 class="page-form__title">Вязание на заказ</h1>
       <section class="type">
         <p class="type__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="filter" method="get">
+        <form class="filter" method="POST">
           <fieldset class="radio-filter">
             <legend class="radio-filter__title">Тип</legend>
             <ul class="radio-filter__list">
@@ -97,6 +97,18 @@
               <li class="name-filter__item">
                 <input class="name-fitler__input" id="patronymic" type="text" placeholder="Отчество, если желаете">
                 <label for="patronymic">Отчество:</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contacts-filter">
+            <ul class="contacts-filter__list">
+              <li class="contacts-filter__item">
+                <input class="contacts-filter__input" id="phone" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <label for="phone">Тел</label>
+              </li>
+              <li class="contacts-filter__item">
+                <input class="contacts-filter__input" id="mail" type="email" placeholder="Ваш Email*">
+                <label for="mail">E-mail</label>
               </li>
             </ul>
           </fieldset>
