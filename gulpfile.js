@@ -1,23 +1,26 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
-const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
+const postcssUrl = require("postcss-url");
+const postcssImport = require("postcss-import");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
 // Styles
 
 const styles = () => {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("source/sass/style.scss", { sourcemaps: true })
     .pipe(plumber())
-    .pipe(sourcemap.init())
+    .pipe(postcss([
+      postcssImport(),
+      postcssUrl(),
+    ]))
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("source/css", { sourcemaps: "." }))
     .pipe(sync.stream());
 }
 
