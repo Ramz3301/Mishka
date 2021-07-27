@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Opens Sans";
-  src: url(../../fonts/opensans.woff2)
-  url(../../fonts/opensans.woff);
+  src: url("../../fonts/opensans.woff2")    url("../../fonts/opensans.woff");
 }
 
 .visually-hidden {
@@ -12,7 +11,7 @@
   padding: 0;
   overflow: hidden;
   border: 0;
-  clip: rect(0 0 0 0)
+  clip: rect(0 0 0 0);
 }
 
 .page {
