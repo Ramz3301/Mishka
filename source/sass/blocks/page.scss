@@ -1,6 +1,11 @@
 @font-face {
   font-family: "Opens Sans";
-  src: url("../../fonts/opensans.woff2")    url("../../fonts/opensans.woff");
+  src: url("../../fonts/opensans.woff2"),    url("../../fonts/opensans.woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/opensansbold.woff2"),    url("../../fonts/opensansbold.woff");
 }
 
 .visually-hidden {
@@ -18,6 +23,7 @@
   max-width: 320px;
   height: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 17px;
   line-height: 30px;
 }

@@ -1,11 +1,14 @@
-:root {
-  --lightgreen: hsla(168, 54%, 60%, 1);
-  --darkgreen: hsla(171, 48%, 55%, 1);
-}
-
 .product-of-the-type__caption {
   background-image: url("../../img/header-img.jpg");
   background-repeat: no-repeat;
+  font-size: 27px;
+}
+
+.product-of-the-type__list {
+  font-size: 19px;
+  line-height: 24px;
+  color: var(--white);
+  list-style: none;
 }
 
 .product-of-the-type__item--luster {
