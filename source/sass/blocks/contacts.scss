@@ -5,13 +5,28 @@
   padding-left: 30px;
 }
 
-.contacts__list {
-  font-weight: 400;
-  font-size: 14px;
+.contacts__title {
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
-.contacts__text {
+.contacts__list {
+  color: var(--charcoal);
+  font-weight: 400;
+  font-size: 14px;
   margin: 0;
+}
+
+.contacts__mail {
+  color: var(--charcoal);
+  text-decoration: none;
+  border-bottom: 1px solid var(--lightgreen);
+}
+
+.contacts__address {
+  margin: 0;
+  margin-bottom: 62px;
 }
 
 .contacts__align {
