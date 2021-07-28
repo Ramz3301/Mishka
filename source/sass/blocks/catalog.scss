@@ -31,8 +31,24 @@
 .catalog__price {
   font-size: 15px;
   line-height: 24px;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 26px;
 }
 
 .catalog__item {
   margin-bottom: 30px;
+}
+
+.catalog__title {
+  margin: 0;
+  line-height: 24px;
+  padding-top: 28px;
+  margin-bottom: 6px;
+}
+
+.catalog__price,
+.catalog__size,
+.catalog__title {
+  padding-left: 28px;
 }
