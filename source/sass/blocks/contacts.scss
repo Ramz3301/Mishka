@@ -1,4 +1,28 @@
+.contacts__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .contacts__list {
   font-weight: 400;
   font-size: 14px;
+}
+
+.contacts__text {
+  margin: 0;
+}
+
+.contacts__align {
+  display: flex;
+}
+
+.contacts__button {
+  padding: 14px 52px;
+}
+
+.contacts__map {
+  background-image: url("../../img/map.jpg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 455px;
 }
