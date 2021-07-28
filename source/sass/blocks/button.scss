@@ -1,7 +1,17 @@
 .button {
   font-size: 18px;
   line-height: 20px;
+  text-transform: uppercase;
   background-color: transparent;
   border: 2px solid var(--charcoal);
   color: var(--charcoal);
+  text-decoration: none;
+}
+
+.button__order {
+  padding: 14px 80px;
+}
+
+.button__write {
+  padding: 14px 80px;
 }

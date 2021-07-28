@@ -1,5 +1,25 @@
+.reviews__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
 .reviews__text {
   font-weight: 400;
   font-size: 15px;
+  margin: 0;
+  margin-bottom: 33px;
   color: var(--charcoal);
+}
+
+.reviews__author-name {
+  margin-bottom: 30px;
+}
+
+.reviews__toggles {
+  margin-bottom: 38px;
 }
