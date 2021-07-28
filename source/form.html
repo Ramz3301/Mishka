@@ -42,9 +42,9 @@
       <section class="type">
         <p class="type__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="filter" method="POST">
-          <fieldset class="radio-filter">
-            <legend class="radio-filter__title">Тип</legend>
-            <ul class="radio-filter__list">
+          <fieldset class="radio-filter fieldset">
+            <legend class="fieldset__title">Тип</legend>
+            <ul class="type__list">
               <li class="radio-filter__item">
                 <input class="radio-filter__input" id="filter-accessory" type="radio" name="accessory" checked>
                 <label for="filter-accessory">Аксессуар для <br>интерьера</label>
@@ -55,9 +55,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="checkbox-filter">
-            <legend class="checkbox-filter__title">Цвет</legend>
-              <ul class="checkbox-filter__list">
+          <fieldset class="checkbox-filte fieldset">
+            <legend class="fieldset__title">Цвет</legend>
+              <ul class="type__list">
                 <li class="checkbox-filter__item">
                   <input class="checkbox-filter__input" id="white-color" type="checkbox" name="white-color" checked>
                   <label for="white-color">Белый</label>
@@ -84,9 +84,9 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset class="name-filter">
-            <legend class="name-filter__title">ФИО</legend>
-            <ul class="name-filter__list">
+          <fieldset class="name-filter fieldset">
+            <legend class="fieldset__title">ФИО</legend>
+            <ul class="type__list">
               <li class="name-filter__item">
                 <input class="name-fitler__input" id="name" type="text" placeholder="Введите ваше имя*">
                 <label for="name">Имя:</label>
@@ -101,8 +101,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contacts-filter">
-            <ul class="contacts-filter__list">
+          <fieldset class="contacts-filter fieldset">
+            <ul class="type__list">
               <li class="contacts-filter__item">
                 <input class="contacts-filter__input" id="phone" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                 <label for="phone">Тел</label>
@@ -113,8 +113,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="additionally">
-            <legend class="additionally-title" for="wishes">Доп</legend>
+          <fieldset class="additionally fieldset">
+            <legend class="fieldset__title" for="wishes">Доп</legend>
             <textarea class="additionally-area" id="wishes" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <p><sup>*</sup>Поля обязательны для заполнения</p>
