@@ -1,3 +1,8 @@
+.product-of-the-week__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .product-of-the-week__subtitle {
   font-size: 17px;
   line-height: 20px;
@@ -18,7 +23,17 @@
 }
 
 .product-of-the-week__price {
+  display: flex;
   line-height: 24px;
   font-weight: 700;
   color: var(--charcoal);
+}
+
+.product-of-the-week__align {
+  display: flex;
+  border-bottom: 1px solid var(--brightgray);
+}
+
+.product-of-the-week__сost {
+  margin: 0;
 }

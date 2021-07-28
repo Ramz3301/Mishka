@@ -1,7 +1,13 @@
-.product-of-the-type__caption {
+.product-of-the-type__image {
   background-image: url("../../img/header-img.jpg");
   background-repeat: no-repeat;
+  width: 320px;
+  height: 283px;
+}
+
+.product-of-the-type__caption {
   font-size: 27px;
+  margin: 0;
 }
 
 .product-of-the-type__list {
