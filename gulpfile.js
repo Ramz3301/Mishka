@@ -4,6 +4,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const postcssUrl = require("postcss-url");
 const postcssImport = require("postcss-import");
+const postScss = require("postcss-scss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
@@ -15,7 +16,7 @@ const styles = () => {
     .pipe(postcss([
       postcssImport(),
       postcssUrl(),
-    ]))
+    ], { syntax: postScss }))
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
