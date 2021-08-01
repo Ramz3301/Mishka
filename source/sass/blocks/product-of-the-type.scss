@@ -1,8 +1,8 @@
 .product-of-the-type__image {
   background-image: url("../../img/header-img.jpg");
   background-repeat: no-repeat;
-  width: 320px;
   height: 283px;
+  width: 320px;
 }
 
 .product-of-the-type__caption {
@@ -18,6 +18,11 @@
   padding: 0;
   margin: 0;
   margin-bottom: 31px;
+
+  /*@media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 334px 334px;
+  } */
 }
 
 .product-of-the-type__item {

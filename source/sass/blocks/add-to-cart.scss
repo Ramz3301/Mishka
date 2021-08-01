@@ -1,0 +1,20 @@
+.add-to-cart {
+  text-align: center;
+}
+
+.add-to-cart__fieldset {
+  border: none;
+}
+
+.add-to-cart__list {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  list-style: none;
+}
+
+/* .add-to-cart__size {
+  border: 2px solid var(--charcoal);
+  opacity: 0.1;
+}
+*/

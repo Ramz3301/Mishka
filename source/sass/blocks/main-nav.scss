@@ -1,10 +1,19 @@
 .main-nav__list {
   list-style: none;
-  line-height: 24px
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__link {
   text-decoration: none;
   color: var(--black);
-  line-height: 24px
+  line-height: 24px;
 }
+
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+

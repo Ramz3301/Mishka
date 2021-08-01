@@ -5,6 +5,11 @@
 .product-of-the-week__wrapper {
   padding-left: 30px;
   padding-right: 30px;
+
+  /*@media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 300px 334px;
+  } */
 }
 
 .product-of-the-week__title {
