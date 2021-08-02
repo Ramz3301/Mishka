@@ -1,11 +1,23 @@
-/*.about-us__wrapper {
-  padding: 0 30px;
-}*/
+.about-us__wrapper {
+  margin: 0 30px;
+
+  @media (min-width: 768px) {
+    margin: 0 50px;
+  }
+}
 
 .about-us__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, min-content);
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
 
 .about-us__item {
@@ -26,5 +38,11 @@
   @media (min-width: 768px) {
     font-size: 43px;
     line-height: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-us__item:nth-of-type(2n+2) {
+    order: 1;
   }
 }
