@@ -1,7 +1,14 @@
-/*.reviews__wrapper {
-  padding: 0 30px;
+.reviews__wrapper {
+  margin: 0 30px;
+
+  @media (min-width: 768px) {
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: min-content 1fr min-content;
+  }
 }
-  */
+
 .reviews__title {
   font-size: 25px;
   margin: 0;
@@ -36,8 +43,29 @@
 .reviews__toggles {
   margin: 0;
   margin-bottom: 38px;
+
+  @media (min-width: 768px) {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
 }
 
 .reviews__button {
   padding: 14px 80px;
+
+  @media (min-width: 768px) {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__list {
+  @media (min-width: 768px) {
+    grid-column: 1/4;
+    grid-row: 2/4;
+  }
 }
