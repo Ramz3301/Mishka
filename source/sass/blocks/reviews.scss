@@ -1,8 +1,7 @@
-.reviews__wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
+/*.reviews__wrapper {
+  padding: 0 30px;
 }
-
+  */
 .reviews__title {
   font-size: 25px;
   margin: 0;
@@ -15,10 +14,19 @@
   margin: 0;
   margin-bottom: 33px;
   color: var(--charcoal);
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-name {
   margin-bottom: 30px;
+  line-height: 24px;
+
+  @media (min-width: 768px) {
+    line-height: 30px;
+  }
 }
 
 .reviews__toggles {

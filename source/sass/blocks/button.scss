@@ -6,4 +6,8 @@
   border: 2px solid var(--charcoal);
   color: var(--charcoal);
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+  }
 }

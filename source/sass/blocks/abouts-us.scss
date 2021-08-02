@@ -1,7 +1,6 @@
-.about-us__wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
-}
+/*.about-us__wrapper {
+  padding: 0 30px;
+}*/
 
 .about-us__list {
   list-style: none;
@@ -12,10 +11,20 @@
 .about-us__item {
   margin-bottom: 82px;
   line-height: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .about-us__title {
   font-size: 25px;
   margin: 0;
   margin-bottom: 82px;
+
+  @media (min-width: 768px) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

@@ -1,8 +1,8 @@
 .contacts__wrapper {
   padding-top: 38px;
-  padding-right: 30px;
   padding-bottom: 40px;
-  padding-left: 30px;
+  /*padding-right: 30px;
+  padding-left: 30px;*/
 }
 
 .contacts__title {
@@ -16,6 +16,10 @@
   font-weight: 400;
   font-size: 14px;
   margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+  }
 }
 
 .contacts__mail {
