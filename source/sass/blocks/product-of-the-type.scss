@@ -29,6 +29,11 @@
     grid-template-columns: 334px 334px;
     font-size: 20px;
     line-height: 30px;
+    margin: 0 50px;
+  }
+
+  @media (min-width: 1150px) {
+    grid-template-columns: 525px 525px;
   }
 }
 

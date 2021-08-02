@@ -1,7 +1,13 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   padding-top: 22px;
+  width: 320px;
+  margin: auto;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 370px 83px 315px;
+    margin: 0;
+  }
 }
 
 .page-header__logo {
