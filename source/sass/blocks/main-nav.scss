@@ -21,6 +21,11 @@
     display: grid;
     grid-template-columns: 160px 160px;
   }
+
+  @media (min-width: 1150px) {
+    grid-row: 1/2;
+    grid-template-columns: 190px 190px;
+  }
 }
 
 .main-nav__link {
@@ -45,5 +50,16 @@
     grid-column: 3/4;
     grid-row: 2/3;
   }
+
+  @media (min-width: 1150px) {
+    grid-column: 4/6;
+  }
 }
 
+.main-nav__desktop {
+  display: none;
+
+  @media (min-width: 1150px) {
+    display: list-item;
+  }
+}
