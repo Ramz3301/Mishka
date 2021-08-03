@@ -42,7 +42,7 @@
 }
 
 @media (max-width: 320px) {
-  .about-us__item:nth-of-type(2n+2) {
+  .about-us__item:nth-of-type(2n + 2) {
     order: 1;
   }
 }
