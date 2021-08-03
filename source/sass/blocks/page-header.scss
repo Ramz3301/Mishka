@@ -1,15 +1,28 @@
 .page-header {
   padding-top: 22px;
-  margin: auto;
+  margin: 0 30px;
   text-align: center;
 
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 370px 83px 315px;
-    margin: auto;
+    grid-template-columns: 320px 83px 265px;
+    margin: 0 50px;
+    grid-template-rows: 100px 100px;
+  }
+
+  @media (min-width: 1150px) {
+    grid-template-columns: 250px 250px 200px 100px 250px;
   }
 }
 
 .page-header__logo {
   height: 79px;
+
+  @media (min-width: 768px) {
+    text-align: start;
+  }
+
+  @media (min-width: 1150px) {
+    grid-column: 3/4;
+  }
 }

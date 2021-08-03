@@ -16,28 +16,27 @@
           alt="Логотип магазина для дома Mishka"
         >
       </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="page__ally-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+      <p class="main-nav__delivery">Бесплатная доставка по России</p>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="page__ally-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link page-header__search" href="#">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-header-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link page-header__search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
@@ -62,33 +61,21 @@
       <section class="product-of-the-week">
         <h2 class="page__ally-hidden">Товар недели</h2>
         <div class="product-of-the-week__wrapper">
-          <h3 class="product-of-the-week__title">Вязаные корзинки</h3>
-          <p class="product-of-the-week__subtitle">Товар недели</p>
-          <p class="product-of-the-week__text">
-            Экологически чистая пряжа, ручная работа. Доступны в шести
-            расцветках и трёх размерах.
-          </p>
           <dl class="product-of-the-week__characteristics">
-            <div class="product-of-the-week__align">
-              <dt class="product-of-the-week__term">Цвет:</dt>
-              <dd class="product-of-the-week__definition">«Тиффани»/серый</dd>
-            </div>
-            <div class="product-of-the-week__align">
-              <dt class="product-of-the-week__term">Диаметр:</dt>
-              <dd class="product-of-the-week__definition">25 см</dd>
-            </div>
-            <div class="product-of-the-week__align">
-              <dt class="product-of-the-week__term">Высота:</dt>
-              <dd class="product-of-the-week__definition">15 см</dd>
-            </div>
-            <div>
-              <dt class="product-of-the-week__term page__ally-hidden">Фото:</dt>
-              <dd class="product-of-the-week__photo"><img src="img/knitted-baskets-mobile.jpg" width="260" height="315" alt="Три корзинки вложенные друг в друга, две салатово-серые побольше и одна розово-белая поменьше"></dd>
-            </div>
-            <div class="product-of-the-week__price">
-              <dt>Цена:</dt>
-              <dd class="product-of-the-week__сost">990 руб.</dd>
-            </div>
+            <dt class="product-of-the-week__title">Вязаные корзинки</dt>
+            <dt class="product-of-the-week__subtitle">Товар недели</dt>
+            <dt class="page__ally-hidden">Описание:</dt>
+            <dd class="product-of-the-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</dd>
+            <dt class="product-of-the-week__term">Цвет:</dt>
+            <dd class="product-of-the-week__definition">«Тиффани»/серый</dd>
+            <dt class="product-of-the-week__term">Диаметр:</dt>
+            <dd class="product-of-the-week__definition">25 см</dd>
+            <dt class="product-of-the-week__term">Высота:</dt>
+            <dd class="product-of-the-week__definition">15 см</dd>
+            <dt class="product-of-the-week__term page__ally-hidden">Фото:</dt>
+            <dd class="product-of-the-week__photo"><img src="img/knitted-baskets-mobile.jpg" width="260" height="315" alt="Три корзинки вложенные друг в друга, две салатово-серые побольше и одна розово-белая поменьше"></dd>
+            <dt>Цена:</dt>
+            <dd class="product-of-the-week__сost">990 руб.</dd>
           </dl>
           <a class="product-of-the-week__button button" href="#">Заказать</a>
         </div>
@@ -171,6 +158,7 @@
             <button class="contacts__button button">Напишите нам</button>
           </div>
         </section>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">

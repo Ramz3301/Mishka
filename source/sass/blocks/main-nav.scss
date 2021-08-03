@@ -1,8 +1,26 @@
+.main-header-nav__list {
+  list-style: none;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: min-content 300px;
+  }
+}
+
 .main-nav__list {
   list-style: none;
   line-height: 24px;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 160px 160px;
+  }
 }
 
 .main-nav__link {
@@ -14,6 +32,18 @@
 @media (min-width: 768px) {
   .main-nav__toggle {
     display: none;
+  }
+}
+
+.main-nav__delivery {
+  display: none;
+  margin: 0;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    display: block;
+    grid-column: 3/4;
+    grid-row: 2/3;
   }
 }
 
