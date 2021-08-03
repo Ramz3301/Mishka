@@ -14,20 +14,3 @@
 .page {
   height: 100%;
 }
-
-.page__wrapper {
-  width: 260px;
-  padding: 0 30px;
-
-  @media (min-width: 768px) {
-    width: 668px;
-    padding: 0 50px;
-  }
-}
-
-@media (min-width: 1150px) {
-  .page__wrapper {
-    width: 1050px;
-    padding: 0 50px;
-  }
-}
