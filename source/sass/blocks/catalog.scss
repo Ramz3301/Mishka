@@ -25,6 +25,7 @@
 
   @media (min-width: 1150px) {
     height: 659px;
+    width: 316px;
     display: flex;
   }
 }
@@ -35,7 +36,8 @@
   padding: 0;
 
   @media (min-width: 1150px) {
-   display: flex;
+    display: flex;
+    gap: 52px;
   }
 }
 
