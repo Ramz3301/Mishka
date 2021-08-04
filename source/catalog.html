@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -15,26 +16,33 @@
           alt="Логотип магазина для дома Mishka"
         >
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="page__ally-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a>Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+      <button class="page-header__toggle" type="button">
+        <span class="page__ally-hidden">Открыть меню</span>
+      </button>
+      <ul class="page-header__list">
+        <li class="page-header__item">
+          <a class="page-header__link">Каталог товаров</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="page-header__desktop">
+          <a class="page-header__link" href="#">Новые поступления</a>
+        </li>
+        <li class="page-header__desktop">
+          <a class="page-header__link" href="#">Распродажа</a>
+        </li>
+      </ul>
+      <p class="page-header__delivery">Бесплатная доставка по России</p>
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link page-header__search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-catalog">
