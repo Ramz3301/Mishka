@@ -4,6 +4,10 @@
   padding-left: 30px;
   margin-bottom: 58px;
   border: 1px solid var(--lightgrey);
+
+  @media (min-width: 768px) {
+    display: grid;
+  }
 }
 
 .production-process__title {
@@ -24,4 +28,10 @@
 
 .production-process__button {
   padding: 14px 19px;
+}
+
+.production-process__video {
+  @media (min-width: 768px) {
+    grid-row: 1/2;
+  }
 }
