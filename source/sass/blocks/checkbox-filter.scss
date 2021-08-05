@@ -4,6 +4,10 @@
     flex-wrap: wrap;
     width: 500px;
   }
+
+  @media (min-width: 1150px) {
+    width: 750px;
+  }
 }
 
 .checkbox-filter__item {
