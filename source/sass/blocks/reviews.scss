@@ -1,8 +1,5 @@
 .reviews__wrapper {
-  padding: 0 30px;
-
   @media (min-width: 768px) {
-    padding: 0 50px;
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-template-rows: min-content 1fr min-content;

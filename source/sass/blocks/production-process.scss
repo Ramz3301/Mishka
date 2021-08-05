@@ -1,13 +1,9 @@
 .production-process {
   padding-top: 22px;
-  padding-right: 30px;
-  padding-left: 30px;
   margin-bottom: 58px;
   border: 1px solid var(--lightgrey);
 
   @media (min-width: 768px) {
-    padding-right: 50px;
-    padding-left: 50px;
     display: grid;
   }
 

@@ -14,3 +14,15 @@
 .page {
   height: 100%;
 }
+
+.page__leveler {
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 668px;
+  }
+
+  @media (min-width: 1150px) {
+    width: 1050px;
+  }
+}

@@ -7,141 +7,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img
-          src="img/mishka-logo-mobile.svg"
-          width="86"
-          height="35"
-          alt="Логотип магазина для дома Mishka"
-        >
-      </a>
-      <button class="page-header__toggle" type="button">
-        <span class="page__ally-hidden">Открыть меню</span>
-      </button>
-      <ul class="page-header__list">
-        <li class="page-header__item">
-          <a class="page-header__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="page-header__item">
-          <a class="page-header__link" href="form.html">Вязание на заказ</a>
-        </li>
-        <li class="page-header__desktop">
-          <a class="page-header__link" href="#">Новые поступления</a>
-        </li>
-        <li class="page-header__desktop">
-          <a class="page-header__link" href="#">Распродажа</a>
-        </li>
-      </ul>
-      <p class="page-header__delivery">Бесплатная доставка по России</p>
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link page-header__search" href="#">Поиск по сайту</a>
+    <div class="page__leveler">
+      <header class="page-header">
+        <a class="page-header__logo">
+          <img
+            src="img/mishka-logo-mobile.svg"
+            width="86"
+            height="35"
+            alt="Логотип магазина для дома Mishka"
+          >
+        </a>
+        <button class="page-header__toggle" type="button">
+          <span class="page__ally-hidden">Открыть меню</span>
+        </button>
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <a class="page-header__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          <li class="page-header__item">
+            <a class="page-header__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="page-header__desktop">
+            <a class="page-header__link" href="#">Новые поступления</a>
+          </li>
+          <li class="page-header__desktop">
+            <a class="page-header__link" href="#">Распродажа</a>
           </li>
         </ul>
-      </nav>
-    </header>
+        <p class="page-header__delivery">Бесплатная доставка по России</p>
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link page-header__search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main class="page-main">
       <h1 class="page__ally-hidden">Интернет-магазин "Мишка"</h1>
-      <section class="product-of-the-type">
-        <div class="product-of-the-type__wrapper">
-          <div class="product-of-the-type__image">
-            <p class="product-of-the-type__caption">
-              Милые штуки ручной<br>работы для дома
+      <div class="page__leveler">
+        <section class="product-of-the-type">
+          <div class="product-of-the-type__wrapper">
+            <div class="product-of-the-type__image">
+              <p class="product-of-the-type__caption">
+                Милые штуки ручной<br>работы для дома
+              </p>
+            </div>
+            <ul class="product-of-the-type__list">
+              <li class="product-of-the-type__item product-of-the-type__item--luster">
+                Предметы <br>интерьера
+              </li>
+              <li class="product-of-the-type__item product-of-the-type__item--toy">
+                Детские <br>игрушки
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="page__leveler">
+        <section class="product-of-the-week">
+          <h2 class="page__ally-hidden">Товар недели</h2>
+          <div class="product-of-the-week__wrapper">
+            <h3 class="product-of-the-week__title">Вязаные корзинки</h3>
+            <p class="product-of-the-week__subtitle">Товар недели</p>
+            <p class="product-of-the-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+            <!--<dl class="product-of-the-week__characteristics">
+              <dt class="product-of-the-week__title">Вязаные корзинки</dt>
+              <dt class="product-of-the-week__subtitle">Товар недели</dt>
+              <dt class="page__ally-hidden">Описание:</dt>
+              <dd class="product-of-the-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</dd>-->
+            <dl class="product-of-the-week__characteristics">
+              <dt class="product-of-the-week__term">Цвет:</dt>
+              <dd class="product-of-the-week__definition">«Тиффани»/серый</dd>
+              <dt class="product-of-the-week__term">Диаметр:</dt>
+              <dd class="product-of-the-week__definition">25 см</dd>
+              <dt class="product-of-the-week__term">Высота:</dt>
+              <dd class="product-of-the-week__definition">15 см</dd>
+            </dl>
+              <!--<dt class="page__ally-hidden">Фото:</dt>
+              <dd class="product-of-the-week__photo"><img src="img/knitted-baskets-mobile.jpg" width="260" height="315" alt="Три корзинки вложенные друг в друга, две салатово-серые побольше и одна розово-белая поменьше"></dd>
+              <dt>Цена:</dt>
+              <dd class="product-of-the-week__сost">990 руб.</dd>
+            </dl>-->
+            <p class="product-of-the-week__photo"><img src="img/knitted-baskets-mobile.jpg" width="260" height="315" alt="Три корзинки вложенные друг в друга, две салатово-серые побольше и одна розово-белая поменьше"></p>
+            <p class="product-of-the-week__price">Цена: 990руб.</p>
+            <a class="product-of-the-week__button button" href="#">Заказать</a>
+          </div>
+        </section>
+      </div>
+      <div class="page__leveler">
+        <section class="about-us">
+          <div class="about-us__wrapper">
+            <h2 class="about-us__title">Коротко о нас:</h2>
+            <ul class="about-us__list">
+              <li class="about-us__item about-us__item--materials">
+                Экологически <br>чистые материалы
+              </li>
+              <li class="about-us__item about-us__item--price">
+                Связано вручную с любовью и умилением
+              </li>
+              <li class="about-us__item about-us__item--likes">
+                Скандинавский стиль <br>по российской цене
+              </li>
+              <li class="about-us__item about-us__item--manually">
+                Поддержка отечественного производителя
+              </li>
+              <li class="about-us__item about-us__item--domestic">
+                Увеличивает лайки<br>на фотографиях
+              </li>
+              <li class="about-us__item about-us__item--gift-wrap">
+                Поставляется в подарочной упаковке
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="page__leveler">
+        <section class="reviews">
+          <div class="reviews__wrapper slider">
+            <h2 class="reviews__title">Отзывы</h2>
+            <div class="reviews__list slider__list">
+              <blockquote class="reviews__item slider__item">
+                <div class="reviews__author-info">
+                  <p class="reviews__text">
+                    Я молодая мама, но всё равно фотографии не набирали и близко
+                    такого количества лайков, как у популярных инстамамочек. В
+                    отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                    фотографии сразу стали более стильными, а также набирают
+                    больше лайков!
+                  </p>
+                  <cite class="reviews__author-name">Анастасия Красильникова<br>@misssssiskras</cite>
+                </div>
+              </blockquote>
+            </div>
+            <p class="reviews__toggles slider__toggles">
+              <button class="slider__toggle" type="button">Назад</button>
+              <button class="slider__toggle" type="button">Вперед</button>
             </p>
+            <button class="reviews__button button" type="button">Написать</button>
           </div>
-          <ul class="product-of-the-type__list">
-            <li class="product-of-the-type__item product-of-the-type__item--luster">
-              Предметы <br>интерьера
-            </li>
-            <li class="product-of-the-type__item product-of-the-type__item--toy">
-              Детские <br>игрушки
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="product-of-the-week">
-        <h2 class="page__ally-hidden">Товар недели</h2>
-        <div class="product-of-the-week__wrapper">
-          <h3 class="product-of-the-week__title">Вязаные корзинки</h3>
-          <p class="product-of-the-week__subtitle">Товар недели</p>
-          <p class="product-of-the-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-          <!--<dl class="product-of-the-week__characteristics">
-            <dt class="product-of-the-week__title">Вязаные корзинки</dt>
-            <dt class="product-of-the-week__subtitle">Товар недели</dt>
-            <dt class="page__ally-hidden">Описание:</dt>
-            <dd class="product-of-the-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</dd>-->
-          <dl class="product-of-the-week__characteristics">
-            <dt class="product-of-the-week__term">Цвет:</dt>
-            <dd class="product-of-the-week__definition">«Тиффани»/серый</dd>
-            <dt class="product-of-the-week__term">Диаметр:</dt>
-            <dd class="product-of-the-week__definition">25 см</dd>
-            <dt class="product-of-the-week__term">Высота:</dt>
-            <dd class="product-of-the-week__definition">15 см</dd>
-          </dl>
-            <!--<dt class="page__ally-hidden">Фото:</dt>
-            <dd class="product-of-the-week__photo"><img src="img/knitted-baskets-mobile.jpg" width="260" height="315" alt="Три корзинки вложенные друг в друга, две салатово-серые побольше и одна розово-белая поменьше"></dd>
-            <dt>Цена:</dt>
-            <dd class="product-of-the-week__сost">990 руб.</dd>
-          </dl>-->
-          <p class="product-of-the-week__photo"><img src="img/knitted-baskets-mobile.jpg" width="260" height="315" alt="Три корзинки вложенные друг в друга, две салатово-серые побольше и одна розово-белая поменьше"></p>
-          <p class="product-of-the-week__price">Цена: 990руб.</p>
-          <a class="product-of-the-week__button button" href="#">Заказать</a>
-        </div>
-      </section>
-      <section class="about-us">
-        <div class="about-us__wrapper">
-          <h2 class="about-us__title">Коротко о нас:</h2>
-          <ul class="about-us__list">
-            <li class="about-us__item about-us__item--materials">
-              Экологически <br>чистые материалы
-            </li>
-            <li class="about-us__item about-us__item--price">
-              Связано вручную с любовью и умилением
-            </li>
-            <li class="about-us__item about-us__item--likes">
-              Скандинавский стиль <br>по российской цене
-            </li>
-            <li class="about-us__item about-us__item--manually">
-              Поддержка отечественного производителя
-            </li>
-            <li class="about-us__item about-us__item--domestic">
-              Увеличивает лайки<br>на фотографиях
-            </li>
-            <li class="about-us__item about-us__item--gift-wrap">
-              Поставляется в подарочной упаковке
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <p class="reviews__text">
-                  Я молодая мама, но всё равно фотографии не набирали и близко
-                  такого количества лайков, как у популярных инстамамочек. В
-                  отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-                  фотографии сразу стали более стильными, а также набирают
-                  больше лайков!
-                </p>
-                <cite class="reviews__author-name">Анастасия Красильникова<br>@misssssiskras</cite>
-              </div>
-            </blockquote>
-          </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">Назад</button>
-            <button class="slider__toggle" type="button">Вперед</button>
-          </p>
-          <button class="reviews__button button" type="button">Написать</button>
-        </div>
-      </section>
+        </section>
+      </div>
       <div class="contacts__wrapper contacts__wrapper--on">
         <section class="contacts">
           <div class="contacts__wrapper contacts__wrapper--off">
@@ -174,26 +184,28 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram">Мы в Инстаграм</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook">Мы в Фейсбук</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter">Мы в Твиттер</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a
-            class="copyright__link"
-            href="https://htmlacademy.ru/intensive/adaptive">
-          </a>
+      <div class="page__leveler">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--instagram">Мы в Инстаграм</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook">Мы в Фейсбук</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twitter">Мы в Твиттер</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a
+              class="copyright__link"
+              href="https://htmlacademy.ru/intensive/adaptive">
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -3,10 +3,6 @@
 }
 
 .product-of-the-week__wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 40px;
-
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 300px 140px min-content;
@@ -15,8 +11,6 @@
 
   @media (min-width: 1150px) {
     grid-template-columns: min-content 300px 525px;
-    padding-left: 82px;
-    padding-right: 50px;
   }
 }
 
@@ -52,6 +46,7 @@
   @media (min-width: 1150px) {
     grid-column: 1/2;
     grid-row: 1/2;
+    margin-right: 43px;
   }
 }
 
