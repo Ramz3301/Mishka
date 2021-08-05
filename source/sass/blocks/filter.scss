@@ -8,3 +8,17 @@
   padding: 14px 43px;
   margin-bottom: 55px;
 }
+
+.filter__wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.filter__position {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}

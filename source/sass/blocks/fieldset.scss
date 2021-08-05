@@ -1,0 +1,29 @@
+.fieldset {
+  border: none;
+  border-top: 1px solid var(--lightgreen);
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    border: none;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+.fieldset:nth-child(2n) {
+  @media (min-width: 768px) {
+    background-color: var(--lightgrey);
+    margin: 0;
+  }
+}
+
+.fieldset__title {
+  color: var(--lightgreen);
+
+  @media (min-width: 768px) {
+    float: left;
+  }
+}

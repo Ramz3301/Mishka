@@ -1,0 +1,21 @@
+.additionally {
+  padding: 0;
+
+  @media (min-width: 768px) {
+    padding-bottom: 50px;
+  }
+}
+
+.additionally-area {
+  resize: none;
+  width: 260px;
+  height: 142px;
+
+  @media (min-width: 768px) {
+    width: 501px;
+  }
+
+  @media (min-width: 1150px) {
+    width: 700px;
+  }
+}

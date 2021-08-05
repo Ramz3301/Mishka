@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo">
         <img
           src="img/mishka-logo-mobile.svg"
           width="86"
@@ -15,26 +16,33 @@
           alt="Логотип магазина для дома Mishka"
         >
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="page__ally-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a>Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+      <button class="page-header__toggle" type="button">
+        <span class="page__ally-hidden">Открыть меню</span>
+      </button>
+      <ul class="page-header__list">
+        <li class="page-header__item">
+          <a class="page-header__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="page-header__desktop">
+          <a class="page-header__link" href="#">Новые поступления</a>
+        </li>
+        <li class="page-header__desktop">
+          <a class="page-header__link" href="#">Распродажа</a>
+        </li>
+      </ul>
+      <p class="page-header__delivery">Бесплатная доставка по России</p>
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link page-header__search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-form">
@@ -55,9 +63,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="checkbox-filte fieldset">
+          <fieldset class="checkbox-filter fieldset">
             <legend class="fieldset__title">Цвет</legend>
-              <ul class="type__list">
+              <ul class="type__list checkbox-filter__list">
                 <li class="checkbox-filter__item">
                   <input class="checkbox-filter__input" id="white-color" type="checkbox" name="white-color" checked>
                   <label for="white-color">Белый</label>
@@ -88,15 +96,15 @@
             <legend class="fieldset__title">ФИО</legend>
             <ul class="type__list">
               <li class="name-filter__item">
-                <input class="name-fitler__input" id="name" type="text" placeholder="Введите ваше имя*">
+                <input class="name-filter__input" id="name" type="text" placeholder="Введите ваше имя*">
                 <label for="name">Имя:</label>
               </li>
               <li class="name-filter__item">
-                <input class="name-fitler__input" id="surname" type="text" placeholder="Укажите фамилию*">
+                <input class="name-filter__input" id="surname" type="text" placeholder="Укажите фамилию*">
                 <label for="surname">Фамилия:</label>
               </li>
               <li class="name-filter__item">
-                <input class="name-fitler__input" id="patronymic" type="text" placeholder="Отчество, если желаете">
+                <input class="name-filter__input" id="patronymic" type="text" placeholder="Отчество, если желаете">
                 <label for="patronymic">Отчество:</label>
               </li>
             </ul>
@@ -105,11 +113,11 @@
             <ul class="type__list">
               <li class="contacts-filter__item">
                 <input class="contacts-filter__input" id="phone" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                <label for="phone">Тел</label>
+                <label class="contacts-filter__label" for="phone">Тел</label>
               </li>
               <li class="contacts-filter__item">
                 <input class="contacts-filter__input" id="mail" type="email" placeholder="Ваш Email*">
-                <label for="mail">E-mail</label>
+                <label class="contacts-filter__label" for="mail">E-mail</label>
               </li>
             </ul>
           </fieldset>
@@ -117,8 +125,10 @@
             <legend class="fieldset__title">Доп</legend>
             <textarea class="additionally-area" id="wishes" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
-          <p class="filter__required"><sup>*</sup>Поля обязательны для заполнения</p>
-          <button class="filter__button button" type="submit">Отправить заказ</button>
+          <div class="filter__position">
+            <p class="filter__required"><sup>*</sup>Поля обязательны для заполнения</p>
+            <button class="filter__button button" type="submit">Отправить заказ</button>
+          </div>
         </form>
       </section>
     </main>

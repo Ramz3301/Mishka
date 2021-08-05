@@ -1,14 +1,20 @@
-.type {
-  padding-top: 30px;
-  /*padding-right: 30px;
-  padding-left: 30px;*/
-}
-
 .type__intro {
   font-weight: 400;
   margin-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media (min-width: 768px) {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: 1150px) {
+    margin: 0 auto;
+  }
 }
 
 .type__list {
   list-style: none;
+  margin: 0;
 }
