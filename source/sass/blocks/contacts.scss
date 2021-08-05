@@ -43,6 +43,7 @@
 
   @media (min-width: 1150px) {
     flex-direction: column;
+    width: 300px;
   }
 }
 
@@ -62,12 +63,9 @@
 }
 
 .contacts__button {
+  display: block;
   padding: 14px 52px;
-
-  @media (min-width: 768px) {
-    display: block;
-    margin: 0 auto;
-  }
+  margin: 0 auto;
 }
 
 .contacts__map {

@@ -49,7 +49,6 @@
     </div>
     <main class="page-main">
       <h1 class="page__ally-hidden">Интернет-магазин "Мишка"</h1>
-      <div class="page__leveler">
         <section class="product-of-the-type">
           <div class="product-of-the-type__wrapper">
             <div class="product-of-the-type__image">
@@ -57,14 +56,16 @@
                 Милые штуки ручной<br>работы для дома
               </p>
             </div>
-            <ul class="product-of-the-type__list">
-              <li class="product-of-the-type__item product-of-the-type__item--luster">
-                Предметы <br>интерьера
-              </li>
-              <li class="product-of-the-type__item product-of-the-type__item--toy">
-                Детские <br>игрушки
-              </li>
-            </ul>
+            <div class="page__leveler">
+              <ul class="product-of-the-type__list">
+                <li class="product-of-the-type__item product-of-the-type__item--luster">
+                  Предметы <br>интерьера
+                </li>
+                <li class="product-of-the-type__item product-of-the-type__item--toy">
+                  Детские <br>игрушки
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </div>
@@ -152,37 +153,35 @@
           </div>
         </section>
       </div>
-      <div class="contacts__wrapper contacts__wrapper--on">
-          <section class="contacts">
-            <div class="contacts__wrapper contacts__wrapper--off">
-              <div class="page__leveler">
-                <div class="contacts__text">
-                  <h2 class="contacts__title">Контакты</h2>
-                  <dl class="contacts__list">
-                    <div class="contacts__align">
-                      <dt class="contacts__item">e-mail:</dt>
-                      <dd>
-                        <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">
-                          info@mimimishkashop.ru
-                        </a>
-                      </dd>
-                    </div>
-                    <div class="contacts__align">
-                      <dt class="contacts__item">адрес:</dt>
-                      <dd>
-                        <p class="contacts__address">
-                          г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8,
-                          офис 101
-                        </p>
-                      </dd>
-                    </div>
-                  </dl>
+      <div class="page__leveler contacts__wrapper--on">
+        <section class="contacts">
+          <div class="page__leveler contacts__wrapper--off">
+            <div class="contacts__text">
+              <h2 class="contacts__title">Контакты</h2>
+              <dl class="contacts__list">
+                <div class="contacts__align">
+                  <dt class="contacts__item">e-mail:</dt>
+                  <dd>
+                    <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">
+                       info@mimimishkashop.ru
+                    </a>
+                  </dd>
                 </div>
-              </div>
-                <div class="contacts__map"></div>
-                <button class="contacts__button button">Напишите нам</button>
+                <div class="contacts__align">
+                  <dt class="contacts__item">адрес:</dt>
+                  <dd>
+                    <p class="contacts__address">
+                      г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8,
+                      офис 101
+                    </p>
+                  </dd>
+                </div>
+              </dl>
             </div>
-          </section>
+          </div>
+          <div class="contacts__map"></div>
+          <button class="contacts__button button">Напишите нам</button>
+        </section>
       </div>
     </main>
     <footer class="page-footer">
