@@ -8,4 +8,8 @@
 
 .contacts-filter__label {
   color: var(--lightgreen);
+
+  @media (min-width: 768px) {
+    margin-right: 100px;
+  }
 }

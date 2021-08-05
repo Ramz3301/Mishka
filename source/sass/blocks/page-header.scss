@@ -1,12 +1,15 @@
 .page-header {
   padding-top: 22px;
-  margin: 0 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 0;
   text-align: center;
 
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 320px 83px 265px;
-    margin: 0 50px;
+    padding-right: 50px;
+    padding-left: 50px;
     grid-template-rows: 100px 100px;
   }
 
