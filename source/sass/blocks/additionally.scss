@@ -2,7 +2,13 @@
   padding: 0;
 
   @media (min-width: 768px) {
+    padding-right: 50px;
     padding-bottom: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 0 200px;
   }
 }
 
