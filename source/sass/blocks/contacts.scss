@@ -46,16 +46,6 @@
   }
 }
 
-.contacts__text {
-  padding-left: 30px;
-  padding-right: 30px;
-
-  @media (min-width: 768px) {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
 .contacts__mail {
   color: var(--charcoal);
   text-decoration: none;
