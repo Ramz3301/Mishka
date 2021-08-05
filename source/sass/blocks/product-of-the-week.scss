@@ -14,7 +14,9 @@
   }
 
   @media (min-width: 1150px) {
-    grid-template-columns: min-content 300px min-content;
+    grid-template-columns: min-content 300px 525px;
+    padding-left: 82px;
+    padding-right: 50px;
   }
 }
 
