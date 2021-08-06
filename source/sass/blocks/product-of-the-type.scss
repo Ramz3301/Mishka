@@ -53,17 +53,3 @@
 .product-of-the-type__item--toy {
   background-color: var(--darkgreen);
 }
-
-.product-of-the-type__wrapper {
-  &--mobile-on {
-    @media (max-width: 768px - 0.05px) {
-      display: contents;
-    }
-  }
-
-  &--mobile-off {
-    @media (min-width: 768px) {
-      display: contents;
-    }
-  }
-}

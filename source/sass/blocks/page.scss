@@ -26,4 +26,10 @@
   @media (min-width: 1150px) {
     width: 1050px;
   }
+
+  &--mobile-off {
+    @media (max-width: 768px - 0.05px) {
+      display: contents;
+    }
+  }
 }
