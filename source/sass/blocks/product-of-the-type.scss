@@ -55,13 +55,13 @@
 }
 
 .product-of-the-type__wrapper {
-  &--mobile-off {
+  &--mobile-on {
     @media (max-width: 768px - 0.05px) {
       display: contents;
     }
   }
 
-  &--mobile-on {
+  &--mobile-off {
     @media (min-width: 768px) {
       display: contents;
     }
