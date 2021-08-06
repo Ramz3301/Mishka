@@ -27,6 +27,12 @@
     width: 1050px;
   }
 
+  &--mobile-on {
+    @media (min-width: 768px) {
+      display: contents;
+    }
+  }
+
   &--mobile-off {
     @media (max-width: 768px - 0.05px) {
       display: contents;

@@ -29,13 +29,9 @@
 
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 334px 334px;
+    grid-template-columns: 1fr 1fr;
     font-size: 20px;
     line-height: 30px;
-  }
-
-  @media (min-width: 1150px) {
-    grid-template-columns: 525px 525px;
   }
 }
 
