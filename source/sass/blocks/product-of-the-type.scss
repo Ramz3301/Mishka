@@ -18,12 +18,13 @@
 }
 
 .product-of-the-type__list {
+  display: contents;
   font-size: 19px;
   line-height: 24px;
   color: var(--white);
   list-style: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 31px;
 
   @media (min-width: 768px) {
@@ -41,6 +42,7 @@
 .product-of-the-type__item {
   padding-top: 24px;
   padding-bottom: 31px;
+  padding-right: 30px;
   padding-left: 30px;
 }
 
@@ -50,4 +52,18 @@
 
 .product-of-the-type__item--toy {
   background-color: var(--darkgreen);
+}
+
+.product-of-the-type__wrapper {
+  &--on {
+    @media (max-width: 768px - 0.05px) {
+      display: contents;
+    }
+  }
+
+  &--off {
+    @media (min-width: 768px) {
+      display: contents;
+    }
+  }
 }

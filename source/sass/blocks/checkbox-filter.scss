@@ -15,3 +15,9 @@
     width: 230px;
   }
 }
+
+.checkbox-filter {
+  @media (min-width: 768px) {
+    background-color: var(--lightgrey);
+  }
+}
