@@ -80,3 +80,14 @@
     grid-column: 4/6;
   }
 }
+
+.page-header--closed .page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 31px;
+  width: 20px;
+  height: 2px;
+  background-color: var(--header-black);
+  box-shadow: 0 4px 0 0 var(--header-black), 0 8px 0 0 var(--header-black);
+}
