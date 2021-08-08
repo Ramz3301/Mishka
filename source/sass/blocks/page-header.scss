@@ -68,12 +68,6 @@
   opacity: 0.6;
 }
 
-.page-header__toggle {
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
 .page-header__desktop {
   display: none;
 
@@ -95,6 +89,12 @@
 
   @media (min-width: 1150px) {
     grid-column: 4/6;
+  }
+}
+
+.page-header__toggle {
+  @media (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -145,6 +145,6 @@
   }
 }
 
-// .page-header__item:last-child {
-//   padding-bottom: 25px;
-// }
+.page-header--closed .page-header__item {
+  display: none;
+}
