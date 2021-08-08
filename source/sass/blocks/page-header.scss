@@ -1,7 +1,6 @@
 .page-header {
   padding-top: 22px;
-  margin: 0;
-  text-align: center;
+  // text-align: center;
 
   @media (min-width: 768px) {
     display: grid;
@@ -16,6 +15,14 @@
 
 .page-header__logo {
   height: 79px;
+  width: 138px;
+
+  @media (max-width: 768px - 0.05px) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
 
   @media (min-width: 768px) {
     text-align: start;
@@ -24,6 +31,11 @@
   @media (min-width: 1150px) {
     grid-column: 3/4;
   }
+}
+
+.page-header__img {
+  width: 86px;
+  height: 35px;
 }
 
 .page-header__list {
@@ -48,6 +60,10 @@
   text-decoration: none;
   color: var(--black);
   line-height: 24px;
+}
+
+.page-header__link:hover {
+  opacity: 0.6;
 }
 
 
@@ -90,4 +106,30 @@
   height: 2px;
   background-color: var(--header-black);
   box-shadow: 0 4px 0 0 var(--header-black), 0 8px 0 0 var(--header-black);
+}
+
+.page-header--opened .page-header__toggle {
+  // top: 0;
+  // right: auto;
+  // left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 26px;
+    height: 2px;
+    background-color: var(--header-black);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
