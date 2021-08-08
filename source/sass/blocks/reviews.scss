@@ -1,3 +1,7 @@
+.reviews {
+  margin-bottom: 89px;
+}
+
 .reviews__wrapper {
   @media (min-width: 768px) {
     display: grid;
@@ -58,6 +62,7 @@
 
 .reviews__item {
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .reviews__list {

@@ -135,11 +135,24 @@
   }
 }
 
+// .page-header__toggle {
+//   // position: absolute;
+//   // top: 0;
+//   // right: 0;
+//   // z-index: 2;
+//   // display: block;
+//   // width: 0;
+//   // height: 0;
+//   // background-color: transparent;
+//   cursor: pointer;
+//   border: none;
+// }
+
 .page-header__item {
   @media (max-width: 768px - 0.05px) {
-    padding-top: 14px;
+    padding-top: 28px;
     padding-right: 30px;
-    padding-bottom: 13px;
+    padding-bottom: 26px;
     padding-left: 46px;
     border-top: 1px solid #ececec;
   }

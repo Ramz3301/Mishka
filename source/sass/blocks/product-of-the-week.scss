@@ -16,6 +16,7 @@
 
 .product-of-the-week__title {
   font-size: 25px;
+  padding-top: 31px;
   margin: 0;
 
   @media (min-width: 768px) {
@@ -72,6 +73,7 @@
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
+  margin: 0;
   margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
@@ -104,6 +106,8 @@
   text-align: center;
   line-height: 24px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 25px;
   color: var(--charcoal);
 
   @media (min-width: 768px) {
@@ -143,6 +147,7 @@
 .product-of-the-week__button {
   padding: 14px 80px;
   text-align: center;
+  display: block;
 
   @media (min-width: 768px) {
     grid-column: 1/2;
