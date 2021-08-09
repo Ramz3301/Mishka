@@ -13,6 +13,7 @@
 }
 
 .about-us__item {
+  position: relative;
   margin-bottom: 82px;
   line-height: 20px;
 
@@ -41,4 +42,70 @@
   .about-us__item:nth-of-type(2n + 2) {
     order: 1;
   }
+}
+
+.about-us__item--materials::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 38px;
+  background-image: url("../../img/flower.svg");
+  background-repeat: no-repeat;
+  bottom: 58px;
+  left: 12px;
+}
+
+.about-us__item--price::before {
+  content: "";
+  position: absolute;
+  width: 47px;
+  height: 27px;
+  background-image: url("../../img/money.svg");
+  background-repeat: no-repeat;
+  bottom: 58px;
+  left: 12px;
+}
+
+.about-us__item--likes::before {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 27px;
+  background-image: url("../../img/heart.svg");
+  background-repeat: no-repeat;
+  bottom: 58px;
+  left: 12px;
+}
+
+.about-us__item--manually::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 34px;
+  background-image: url("../../img/clew.svg");
+  background-repeat: no-repeat;
+  bottom: 58px;
+  left: 12px;
+}
+
+.about-us__item--domestic::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 23px;
+  background-image: url("../../img/rocket.svg");
+  background-repeat: no-repeat;
+  bottom: 58px;
+  left: 12px;
+}
+
+.about-us__item--gift::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  background-image: url("../../img/gift.svg");
+  background-repeat: no-repeat;
+  bottom: 58px;
+  left: 12px;
 }
