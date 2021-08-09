@@ -36,6 +36,7 @@
 }
 
 .product-of-the-type__item {
+  position: relative;
   padding-top: 24px;
   padding-bottom: 31px;
   padding-right: 30px;
@@ -46,6 +47,28 @@
   background-color: var(--lightgreen);
 }
 
+.product-of-the-type__item--luster::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/interior.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 62px;
+  top: 23px;
+  right: 36px;
+}
+
 .product-of-the-type__item--toy {
   background-color: var(--darkgreen);
+}
+
+.product-of-the-type__item--toy::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/toy.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: 21px;
+  right: 27px;
 }
