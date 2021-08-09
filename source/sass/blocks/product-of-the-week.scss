@@ -5,12 +5,12 @@
 .product-of-the-week__wrapper {
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 300px 140px min-content;
+    grid-template-columns: 292px 140px min-content;
     grid-template-rows: min-content 100px 150px;
   }
 
   @media (min-width: 1150px) {
-    grid-template-columns: min-content 300px 525px;
+    grid-template-columns: min-content 292px 525px;
   }
 }
 
@@ -77,6 +77,10 @@
   margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    grid-row: 3/4;
+  }
 
   @media (min-width: 1150px) {
     grid-column: 2/3;

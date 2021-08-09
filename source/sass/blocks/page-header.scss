@@ -1,6 +1,10 @@
 .page-header {
   padding-top: 22px;
-  // text-align: center;
+  height: 57px;
+
+  @media (max-width: 767px) {
+    position: relative;
+  }
 
   @media (min-width: 768px) {
     display: grid;
@@ -14,7 +18,7 @@
 }
 
 .page-header__logo {
-  height: 79px;
+  // height: 79px;
 
   @media (max-width: 768px - 0.05px) {
     position: absolute;
@@ -43,7 +47,7 @@
   padding: 0;
 
   @media (max-width: 768px - 0.05px) {
-    padding-top: 22px;
+    padding-top: 58px;
   }
 
   @media (min-width: 768px) {
@@ -93,6 +97,19 @@
 }
 
 .page-header__toggle {
+  position: absolute;
+  top: 32px;
+  right: 1px;
+  z-index: 2;
+  display: block;
+  width: 20px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
   @media (min-width: 768px) {
     display: none;
   }
@@ -101,8 +118,8 @@
 .page-header--closed .page-header__toggle::before {
   content: "";
   position: absolute;
-  top: 32px;
-  right: 31px;
+  top: 0;
+  right: 0;
   width: 20px;
   height: 2px;
   background-color: var(--header-black);
@@ -110,19 +127,15 @@
 }
 
 .page-header--opened .page-header__toggle {
-  // top: 0;
-  // right: auto;
-  // left: 0;
-
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 40px;
-    right: 30px;
-    width: 26px;
+    top: 50%;
+    right: 0;
+    width: 20px;
     height: 2px;
-    background-color: var(--header-black);
+    background-color: var(--black);
   }
 
   &::before {
@@ -135,21 +148,9 @@
   }
 }
 
-// .page-header__toggle {
-//   // position: absolute;
-//   // top: 0;
-//   // right: 0;
-//   // z-index: 2;
-//   // display: block;
-//   // width: 0;
-//   // height: 0;
-//   // background-color: transparent;
-//   cursor: pointer;
-//   border: none;
-// }
-
 .page-header__item {
   @media (max-width: 768px - 0.05px) {
+    // background-color: var(--white);
     padding-top: 28px;
     padding-right: 30px;
     padding-bottom: 26px;
@@ -161,5 +162,11 @@
 .page-header--closed .page-header__item {
   @media (max-width: 768px - 0.05px) {
     display: none;
+  }
+}
+
+.page-header__menu-list {
+  @media (max-width: 767px) {
+    background-color: var(--white);
   }
 }

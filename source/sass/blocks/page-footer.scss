@@ -10,11 +10,15 @@
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-around;
+    padding-top: 51px;
+    padding-bottom: 58px;
   }
 }
 
 .page-footer__copyright {
-  padding-top: 22px;
+  @media (max-width: 767px) {
+    padding-top: 22px;
+  }
 
   @media (min-width: 768px) {
     align-self: center;

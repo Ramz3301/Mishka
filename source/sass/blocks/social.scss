@@ -8,6 +8,10 @@
   gap: 40px;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 // .social__link--twitter {

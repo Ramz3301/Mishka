@@ -45,6 +45,7 @@
 
 .product-of-the-type__item--luster {
   background-color: var(--lightgreen);
+  z-index: -10;
 }
 
 .product-of-the-type__item--luster::before {

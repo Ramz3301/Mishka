@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <div class="page__leveler">
-      <header class="page-header page-header--closed page-header--nojs">
+      <header class="page-header page-header--opened page-header--nojs">
         <a class="page-header__logo">
           <img
             class="page-header__img"
@@ -18,10 +18,10 @@
             alt="Логотип магазина для дома Mishka"
           >
         </a>
-        <button class="page-header__toggle" type="button" aria-expanded="false">
+        <button class="page-header__toggle" type="button" aria-expanded="false" aria-controls="">
           <span class="page__ally-hidden">Открыть меню</span>
         </button>
-        <ul class="page-header__list">
+        <ul class="page-header__list page-header__menu-list">
           <li class="page-header__item">
             <a class="page-header__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -37,7 +37,7 @@
         </ul>
         <p class="page-header__delivery">Бесплатная доставка по России</p>
         <nav class="page-header__nav main-nav">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list page-header__menu-list">
             <li class="main-nav__item page-header__item">
               <a class="main-nav__link page-header__search page-header__link" href="#">Поиск по сайту</a>
             </li>
