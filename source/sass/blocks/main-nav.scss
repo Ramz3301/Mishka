@@ -6,7 +6,7 @@
 
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: min-content 300px;
+    grid-template-columns: 82px 300px;
   }
 }
 
@@ -14,4 +14,23 @@
   text-decoration: none;
   color: var(--black);
   line-height: 24px;
+}
+
+.main-nav__item {
+  position: relative;
+}
+
+.main-nav__link--cart {
+  position: absolute;
+  left: 30px;
+
+  @media (min-width: 768px) {
+    position: static;
+    margin-right: 30px;
+  }
+}
+
+.main-nav__link--search {
+  position: absolute;
+  left: 30px;
 }

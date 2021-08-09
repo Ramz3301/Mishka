@@ -150,7 +150,7 @@
 
 .page-header__item {
   @media (max-width: 768px - 0.05px) {
-    // background-color: var(--white);
+    background-color: var(--white);
     padding-top: 28px;
     padding-right: 30px;
     padding-bottom: 26px;
@@ -168,5 +168,11 @@
 .page-header__menu-list {
   @media (max-width: 767px) {
     background-color: var(--white);
+  }
+}
+
+.page-header__search {
+  @media (min-width: 768px) {
+    display: none;
   }
 }
