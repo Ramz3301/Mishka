@@ -1,4 +1,14 @@
 .copyright__text {
   font-size: 19px;
   line-height: 18px;
+  margin: 0;
+  margin-right: 27px;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--black);
 }
