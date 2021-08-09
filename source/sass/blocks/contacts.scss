@@ -1,16 +1,16 @@
 .contacts {
   display: block;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 
   @media (min-width: 768px) {
-    margin-bottom: 57px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: 1150px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 400px min-content;
-    margin-bottom: 105px;
+    padding-bottom: 105px;
   }
 }
 
