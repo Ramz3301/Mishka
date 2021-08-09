@@ -1,3 +1,10 @@
+.about-us__wrapper {
+  @media (min-width: 1150px) {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
 .about-us__list {
   list-style: none;
   padding: 0;
@@ -30,13 +37,11 @@
 }
 
 .about-us__title {
-  font-size: 25px;
   margin: 0;
   margin-bottom: 82px;
 
   @media (min-width: 768px) {
-    font-size: 43px;
-    line-height: 50px;
+    margin-bottom: 95px;
   }
 }
 
