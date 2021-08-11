@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
-    <div class="page__leveler">
-      <header class="page-header">
+    <div class="page__leveler page__leveler--mobile-off">
+      <header class="page-header page-header--closed page-header--nojs">
         <a class="page-header__logo" href="index.html">
           <img
+            class="page-header__img"
             src="img/mishka-logo-mobile.svg"
             width="86"
             height="35"
@@ -20,7 +21,7 @@
         <button class="page-header__toggle" type="button">
           <span class="page__ally-hidden">Открыть меню</span>
         </button>
-        <ul class="page-header__list">
+        <ul class="page-header__list page-header__menu-list">
           <li class="page-header__item">
             <a class="page-header__link">Каталог товаров</a>
           </li>
@@ -36,12 +37,20 @@
         </ul>
         <p class="page-header__delivery">Бесплатная доставка по России</p>
         <nav class="page-header__nav main-nav">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list page-header__menu-list">
             <li class="main-nav__item page-header__item">
-              <a class="main-nav__link page-header__search" href="#">Поиск по сайту</a>
+              <svg class="main-nav__link--search" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" fill="black"/>
+              </svg>
+              <a class="main-nav__link page-header__search page-header__link" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item page-header__item">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+              <svg class="main-nav__link--cart" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
+              </svg>
+              <a class="main-nav__link page-header__link" href="#">
+                Корзина: пока пуста
+              </a>
             </li>
           </ul>
         </nav>
@@ -58,7 +67,12 @@
                 <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
                 <img class="catalog__product-photo" src="img/catalog/bunny.jpg" width="260" height="195" alt="Вязаный заяц, ощущение одежды сшитой синими нитками">
                 <p class="catalog__size">Рост 30 см, вес 200 г</p>
-                <p class="catalog__price">1 200 руб.</p>
+                <p class="catalog__price">
+                  1 200 руб.
+                  <svg class="catalog__price--cart" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
+                  </svg>
+                </p>
               </div>
             </li>
             <li class="catalog__item">
@@ -66,7 +80,12 @@
                 <h3 class="catalog__title">Корзинка для белья</h3>
                 <img class="catalog__product-photo" src="img/catalog/laundry-basket.jpg" width="260" height="195" alt="Вязаная красно-белая корзинка, внутри белье рулонами">
                 <p class="catalog__size">Диаметр 15 см, высота 10 см</p>
-                <p class="catalog__price">690 руб.</p>
+                <p class="catalog__price">
+                  690 руб.
+                  <svg class="catalog__price--cart" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
+                  </svg>
+                </p>
               </div>
             </li>
             <li class="catalog__item">
@@ -74,7 +93,12 @@
                 <h3 class="catalog__title">Большая корзинка<br>для игрушек</h3>
                 <img class="catalog__product-photo" src="img/catalog/basket-for-toys.jpg" width="260" height="195" alt="Большая вязаная бело-зеленая корзинка,внутри игрушки">
                 <p class="catalog__size">Диаметр 30 см, высота 30 см</p>
-                <p class="catalog__price">1 500 руб.</p>
+                <p class="catalog__price">
+                  1 500 руб.
+                  <svg class="catalog__price--cart" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
+                  </svg>
+                </p>
               </div>
             </li>
           </ul>
@@ -143,5 +167,21 @@
         </form>
       </div>
     </section>
+    <script>
+      let pageHeader = document.querySelector('.page-header');
+      let headerToggle = document.querySelector('.page-header__toggle');
+
+      // pageHeader.classList.remove('page-header--nojs')
+
+      headerToggle.addEventListener('click', function() {
+        if (pageHeader.classList.contains('page-header--closed')) {
+          pageHeader.classList.remove('page-header--closed');
+          pageHeader.classList.add('page-header--opened');
+        } else {
+          pageHeader.classList.add('page-header--closed');
+          pageHeader.classList.remove('page-header--opened');
+        }
+      });
+    </script>
   </body>
 </html>

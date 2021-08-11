@@ -54,6 +54,7 @@
 }
 
 .catalog__price {
+  position: relative;
   font-size: 15px;
   line-height: 24px;
   margin: 0;
@@ -80,4 +81,9 @@
 .catalog__size,
 .catalog__title {
   padding-left: 28px;
+}
+
+.catalog__price--cart {
+  position: absolute;
+  right: 27px;
 }
