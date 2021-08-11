@@ -1,20 +1,14 @@
 .additionally {
   padding: 0;
-  padding-right: 30px;
-  padding-left: 30px;
 
   @media (min-width: 768px) {
     padding-top: 50px;
-    padding-right: 50px;
     padding-bottom: 50px;
-    padding-left: 50px;
   }
 
   @media (min-width: 1150px) {
     padding-top: 50px;
-    padding-right: 100px;
     padding-bottom: 50px;
-    padding-left: 100px;
   }
 }
 

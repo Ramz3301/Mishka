@@ -1,5 +1,10 @@
 .name-filter__item {
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .name-filter__input {
