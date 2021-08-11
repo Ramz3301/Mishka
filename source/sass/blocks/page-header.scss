@@ -9,7 +9,7 @@
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 320px 82px 265px;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 70px 50px;
     // align-items: center;
   }
 
@@ -62,7 +62,7 @@
   @media (min-width: 1150px) {
     grid-row: 1/3;
     grid-template-columns: 190px 190px;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 70px 50px;
   }
 }
 
