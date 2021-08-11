@@ -20,16 +20,6 @@
 
 .fieldset:not(:last-of-type) {
   margin-bottom: 40px;
-
-  @media (min-width: 768px) {
-    // margin: 0;
-  }
-}
-
-.fieldset:nth-child(2n) {
-  @media (min-width: 768px) {
-    background-color: var(--lightgrey);
-  }
 }
 
 .fieldset__title {
@@ -41,5 +31,12 @@
   @media (min-width: 768px) {
     float: left;
     margin-right: 100px;
+  }
+}
+
+
+.fieldset--background-color {
+  @media (min-width: 768px) {
+    background-color: var(--lightgrey);
   }
 }
