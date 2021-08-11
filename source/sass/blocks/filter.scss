@@ -4,11 +4,20 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .filter__button {
   padding: 14px 43px;
   margin-bottom: 55px;
+
+  @media (min-width: 768px) {
+    line-height: 16px;
+  }
 }
 
 .filter__wrapper {

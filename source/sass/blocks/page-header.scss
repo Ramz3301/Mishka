@@ -70,6 +70,10 @@
   text-decoration: none;
   color: var(--black);
   line-height: 24px;
+
+  @media (min-width: 768px) {
+    font-size: 15px;
+  }
 }
 
 .page-header__link:hover {
@@ -93,6 +97,8 @@
     display: block;
     grid-column: 3/4;
     grid-row: 2/3;
+    font-size: 15px;
+    line-height: 24px;
   }
 
   @media (min-width: 1150px) {
