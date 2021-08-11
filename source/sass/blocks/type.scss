@@ -1,22 +1,16 @@
 .type__intro {
   font-weight: 400;
-  padding-right: 30px;
-  padding-left: 30px;
   padding-top: 20px;
   margin: 0;
   margin-bottom: 30px;
 
   @media (min-width: 768px) {
     padding-top: 54px;
-    padding-right: 50px;
-    padding-left: 50px;
     margin-bottom: 60px;
   }
 
   @media (min-width: 1150px) {
     padding-top: 100px;
-    padding-right: 225px;
-    padding-left: 225px;
     margin-bottom: 60px;
   }
 }

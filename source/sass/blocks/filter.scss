@@ -17,16 +17,9 @@
 }
 
 .filter__position {
-  padding: 0 30px;
-
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 0 50px;
-  }
-
-  @media (min-width: 1150px) {
-    padding: 0 225px;
   }
 }
