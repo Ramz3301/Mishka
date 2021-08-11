@@ -3,6 +3,7 @@
   border-top: 1px solid var(--lightgreen);
   padding: 0;
   margin: 0;
+  padding-top: 40px;
 
   @media (min-width: 768px) {
     display: flex;
@@ -33,6 +34,9 @@
 
 .fieldset__title {
   color: var(--lightgreen);
+  line-height: 16px;
+  padding: 0;
+  padding-right: 10px;
 
   @media (min-width: 768px) {
     float: left;

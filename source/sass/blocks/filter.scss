@@ -3,6 +3,7 @@
   line-height: 16px;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .filter__button {
@@ -17,6 +18,8 @@
 }
 
 .filter__position {
+  padding-top: 15px;
+
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
