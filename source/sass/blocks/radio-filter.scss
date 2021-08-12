@@ -1,3 +1,32 @@
 .radio-filter__item {
   margin-bottom: 20px;
 }
+
+.radio-filter__input:checked + .radio-filter__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -30px;
+  width: 42px;
+  height: 42px;
+  background-image: url("../../img/form/radio-center.svg");
+  background-repeat: no-repeat;
+}
+
+.radio-filter__label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 42px;
+  height: 42px;
+  background-color: #444444;
+}
+
+.radio-filter__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 50px;
+}
