@@ -6,6 +6,7 @@
 
   @media (min-width: 768px) {
     display: grid;
+    padding: 0;
   }
 
   @media (min-width: 1150px) {
@@ -65,10 +66,13 @@
 }
 
 .production-process__video {
+  margin: 0;
   margin-bottom: 35px;
 
   @media (min-width: 768px) {
     grid-row: 1/2;
+    // height: auto;
+    // width: auto;
   }
 
   @media (min-width: 1150px) {
@@ -81,4 +85,11 @@
   position: absolute;
   top: 13px;
   left: 30px;
+}
+
+.production-process__picture {
+  @media (min-width: 768px) {
+    width: auto;
+    height: auto;
+  }
 }

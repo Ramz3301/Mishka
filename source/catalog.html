@@ -128,10 +128,13 @@
                 <path d="M26 10L32 6V22L26 18V10ZM24 10V18C24 20.2 22.2 22 20 22H4C1.8 22 0 20.2 0 18V10C0 7.8 1.8 6 4 6H14C14 4.9 14.9 4 16 4V2H5C4.4 2 4 1.6 4 1C4 0.4 4.4 0 5 0H17C17.6 0 18 0.4 18 1V4C19.1 4 20 4.9 20 6C22.2 6 24 7.8 24 10ZM12 10H4V18H12V10ZM20 11C20 10.4 19.6 10 19 10H15C14.4 10 14 10.4 14 11C14 11.6 14.4 12 15 12H19C19.6 12 20 11.6 20 11Z" fill="#63D1BB"/>
               </svg>
             </h2>
-            <!-- <video class="production-process__video" width="260" height="150" poster="img/catalog/production-video.jpg" srcset="img">
+            <!-- <video class="production-process__video" width="260" height="150" poster="img/catalog/production-video.jpg">
             </video> -->
             <p class="production-process__video">
-              <img src="img/catalog/production-video-mobile.jpg" srcset="img/catalog/production-video-mobile@2x.jpg 2x" width="260" height="150">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/production-video-tablet.jpg 1x, img/catalog/tablet/production-video-tablet@2x.jpg 2x">
+                <img class="production-process__picture" src="img/catalog/production-video-mobile.jpg" srcset="img/catalog/production-video-mobile@2x.jpg 2x" width="260" height="150">
+              </picture>
             </p>
               <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a class="production-process__button button" href="#">Сделать заказ</a>
