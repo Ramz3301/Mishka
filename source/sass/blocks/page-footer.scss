@@ -24,3 +24,11 @@
     align-self: center;
   }
 }
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline;
+  }
+}
