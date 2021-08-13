@@ -42,13 +42,14 @@
   height: 35px;
 
   @media (min-width: 768px) {
+    // display: block;
     width: 113px;
-    height: 46px;
+    height: auto;
+    // margin: 0 auto;
   }
 
   @media (min-width: 1150px) {
     width: 149px;
-    height: 72px;
   }
 }
 
