@@ -40,6 +40,16 @@
 .page-header__img {
   width: 86px;
   height: 35px;
+
+  @media (min-width: 768px) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: 1150px) {
+    width: 149px;
+    height: 72px;
+  }
 }
 
 .page-header__list {
