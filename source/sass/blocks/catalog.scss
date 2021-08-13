@@ -9,10 +9,10 @@
   border-top: none;
 
   @media (min-width: 768px) {
-    height: 350px;
+    height: 334px;
     display: grid;
     grid-template-columns: 350px 320px;
-    grid-template-rows: min-content 1fr min-content;
+    grid-template-rows: 74px 1fr;
     border-top: 1px solid var(--lightgrey);
   }
 
@@ -35,10 +35,12 @@
 }
 
 .catalog__product-photo {
-  order: -10;
+  // order: -10;
 
   @media (min-width: 768px) {
     grid-row: 3 span;
+    height: auto;
+    width: auto;
   }
 }
 
@@ -75,6 +77,10 @@
   line-height: 24px;
   padding-top: 28px;
   margin-bottom: 6px;
+
+  @media (min-width: 768px) {
+    grid-column: 2/3;
+  }
 }
 
 .catalog__price,
