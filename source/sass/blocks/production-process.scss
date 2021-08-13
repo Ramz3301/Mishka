@@ -10,7 +10,6 @@
   }
 
   @media (min-width: 1150px) {
-    grid-template-columns: 650px  400px;
     grid-template-rows: min-content min-content min-content;
   }
 }
@@ -60,7 +59,7 @@
   @media (min-width: 1150px) {
     grid-column: 2/3;
     padding: 14px 43px;
-    margin: 0 auto;
+    margin: auto;
     margin-bottom: 60px;
   }
 }
@@ -77,6 +76,8 @@
 
   @media (min-width: 1150px) {
     grid-column: 1/2;
+    grid-row: 1/4;
+    margin: 0;
   }
 }
 
