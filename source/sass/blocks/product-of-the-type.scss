@@ -1,14 +1,16 @@
 .product-of-the-type__image {
-  background-image: url("../../img/header-img.jpg");
+  background-image: url("../../img/header-image.jpg");
   background-repeat: no-repeat;
   width: 320px;
   height: 285px;
-  // margin: 0 auto;
+  background-position: 50% 0;
+  background-size: cover;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
     width: 100%;
     height: 746px;
-    background-position: 50% 0;
+    background-position: 50% 60%;
     // background-color: var(--lightgrey);
   }
 
@@ -28,8 +30,9 @@
   // padding-top: 73px;
 
   @media (min-width: 768px) {
-    // font-size: 43px;
-    // line-height: 50px;
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 150px;
   }
 }
 

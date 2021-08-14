@@ -173,3 +173,10 @@
     grid-column: 2/3;
   }
 }
+
+.product-of-the-week__image {
+  @media (min-width: 768px) {
+    width: auto;
+    height: auto;
+  }
+}

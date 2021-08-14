@@ -114,7 +114,13 @@
               <dt>Цена:</dt>
               <dd class="product-of-the-week__сost">990 руб.</dd>
             </dl>-->
-            <p class="product-of-the-week__photo"><img src="img/knitted-baskets-mobile.jpg" width="260" height="315" alt="Три корзинки вложенные друг в друга, две салатово-серые побольше и одна розово-белая поменьше"></p>
+            <p class="product-of-the-week__photo">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/knitted-baskets-desktop.jpg 1x, img/knitted-baskets-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/knitted-baskets-tablet.jpg 1x, img/knitted-baskets-tablet@2x.jpg 2x">
+                <img class="product-of-the-week__image" src="img/knitted-baskets-mobile.jpg" srcset="img/knitted-baskets-mobile@2x.jpg 2x" width="260" height="315" alt="Три корзинки вложенные друг в друга, две салатово-серые побольше и одна розово-белая поменьше">
+              </picture>
+            </p>
             <p class="product-of-the-week__price">Цена: 990руб.</p>
             <a class="product-of-the-week__button button" href="#">Заказать</a>
           </div>
