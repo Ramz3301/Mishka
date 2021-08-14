@@ -35,13 +35,15 @@
 }
 
 .catalog__product-photo {
-  // order: -10;
-
   @media (min-width: 768px) {
     grid-row: 3 span;
     height: auto;
     width: auto;
   }
+}
+
+.catalog__photo-position {
+  order: -10;
 }
 
 .catalog__size {
