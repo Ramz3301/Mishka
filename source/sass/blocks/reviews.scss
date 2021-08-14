@@ -1,5 +1,11 @@
 .reviews {
   padding-bottom: 89px;
+
+  @media (min-width: 768px) {
+    padding-top: 83px;
+    background-image: url("../../img/carpet-tablet.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 .reviews__wrapper {

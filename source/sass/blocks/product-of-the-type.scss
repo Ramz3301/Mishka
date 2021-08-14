@@ -14,13 +14,13 @@
     // background-color: var(--lightgrey);
   }
 
+  @media (min-width: 1150px) {
+    // background-size: cover;
+  }
+
   @media (min-resolution: 2dppx) {
     // background-image: url("../../img/header-img@2x.jpg");
     // background-size: ;
-  }
-
-  @media (min-width: 1150px) {
-    // background-size: cover;
   }
 }
 
