@@ -9,9 +9,9 @@
 .product-of-the-week__wrapper {
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 292px 334px;
-    column-gap: 45px;
+    grid-template-columns: 292px 265px 100px;
     grid-template-rows: min-content 140px 150px;
+    align-items: center;
   }
 
   @media (min-width: 1150px) {
@@ -44,11 +44,10 @@
 
   @media (min-width: 768px) {
     line-height: 17px;
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 1/2;
     margin: 0;
-    margin-top: 17px;
-    text-align: end;
+    text-align: center;
   }
 
   @media (min-width: 1150px) {
@@ -151,7 +150,7 @@
   @media (min-width: 768px) {
     text-align: end;
     margin: 0;
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 2/5;
   }
 
