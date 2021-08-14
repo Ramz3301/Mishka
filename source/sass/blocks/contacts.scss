@@ -41,13 +41,15 @@
 }
 
 .contacts__title::before {
-  content: "";
-  position: absolute;
-  width: 47px;
-  height: 81px;
-  background-image: url("../../img/flag.svg");
-  background-repeat: no-repeat;
-  right: 0;
+  @media (min-width: 768px) {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 81px;
+    background-image: url("../../img/flag.svg");
+    background-repeat: no-repeat;
+    right: 0;
+  }
 
   @media (min-width: 1150px) {
     left: -100px;
@@ -102,8 +104,10 @@
 }
 
 .contacts__map {
-  background-image: url("../../img/map.jpg");
+  // background-image: url("../../img/map.jpg");
+  background-image: url("../../img/map-mishka.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 0;
   margin-bottom: 42px;
   height: 457px;
   width: 100%;
