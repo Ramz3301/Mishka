@@ -11,6 +11,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 400px min-content;
     padding-bottom: 105px;
+    padding-left: 174px;
   }
 }
 
@@ -35,6 +36,21 @@
 
   @media (min-width: 768px) {
     margin-bottom: 50px;
+    position: relative;
+  }
+}
+
+.contacts__title::before {
+  content: "";
+  position: absolute;
+  width: 47px;
+  height: 81px;
+  background-image: url("../../img/flag.svg");
+  background-repeat: no-repeat;
+  right: 0;
+
+  @media (min-width: 1150px) {
+    left: -100px;
   }
 }
 
