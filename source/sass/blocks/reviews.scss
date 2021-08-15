@@ -6,6 +6,11 @@
     background-image: url("../../img/carpet-tablet.jpg");
     background-repeat: no-repeat;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/carpet-tablet@2x.jpg");
+    background-size: 350px auto;
+  }
 }
 
 .reviews__wrapper {
