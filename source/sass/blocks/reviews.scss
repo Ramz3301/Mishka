@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
   }
 
-  @media (min-resolution: 2dppx) {
+  @media (min-width: 768px) and (min-resolution: 2dppx) {
     background-image: url("../../img/carpet-tablet@2x.jpg");
     background-size: 350px auto;
   }
