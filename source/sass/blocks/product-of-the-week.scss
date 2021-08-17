@@ -62,7 +62,7 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   @media (min-width: 768px) {
     font-size: 17px;
@@ -80,7 +80,7 @@
   line-height: 20px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
 
@@ -101,10 +101,15 @@
 
 .product-of-the-week__term {
   width: 33%;
+  margin-bottom: 21px;
 
   @media (min-width: 768px) {
     grid-column: 1/2;
   }
+}
+
+.product-of-the-week__term:last-of-type {
+  margin-bottom: 0;
 }
 
 .product-of-the-week__definition {
@@ -145,7 +150,7 @@
 
 .product-of-the-week__photo {
   margin-top: 28px;
-  margin-bottom: 26px;
+  margin-bottom: 17px;
 
   @media (min-width: 768px) {
     text-align: end;
