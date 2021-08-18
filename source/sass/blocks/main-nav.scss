@@ -24,18 +24,28 @@
   position: relative;
 }
 
-.main-nav__link--cart {
-  position: absolute;
+.main-nav__link--cart::before {
+  content: "";
+  display: block;
+  background-image: url("../../img/sprite.svg#cart");
+  width: 21px;
+  height: 18px;
+  // position: absolute;
   left: 30px;
 
   @media (min-width: 768px) {
-    position: static;
-    margin-right: 30px;
+    // position: static;
+    // margin-right: 30px;
   }
 }
 
-.main-nav__link--search {
+.main-nav__link--search::before {
+  content: "";
+  display: block;
   position: absolute;
   left: 30px;
-  mask: url("../../img/sprite.svg#search");
+  background-image: url("../../img/sprite.svg#search");
+  width: 18px;
+  height: 18px;
+  background-color: red;
 }

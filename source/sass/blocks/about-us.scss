@@ -38,7 +38,7 @@
 
 .about-us__title {
   margin: 0;
-  margin-bottom: 82px;
+  margin-bottom: 83px;
 
   @media (min-width: 768px) {
     margin-bottom: 95px;
@@ -58,8 +58,8 @@
   height: 38px;
   background-image: url("../../img/flower.svg");
   background-repeat: no-repeat;
-  bottom: 58px;
-  left: 12px;
+  bottom: 56px;
+  left: 8px;
 }
 
 .about-us__item--price::before {
@@ -69,8 +69,8 @@
   height: 27px;
   background-image: url("../../img/money.svg");
   background-repeat: no-repeat;
-  bottom: 58px;
-  left: 12px;
+  bottom: 65px;
+  left: 1px;
 }
 
 .about-us__item--likes::before {
@@ -80,8 +80,8 @@
   height: 27px;
   background-image: url("../../img/heart.svg");
   background-repeat: no-repeat;
-  bottom: 58px;
-  left: 12px;
+  bottom: 59px;
+  left: 6px;
 }
 
 .about-us__item--likes {
@@ -97,8 +97,8 @@
   height: 34px;
   background-image: url("../../img/clew.svg");
   background-repeat: no-repeat;
-  bottom: 58px;
-  left: 12px;
+  bottom: 54px;
+  left: 3px;
 }
 
 .about-us__item--domestic::before {
@@ -108,8 +108,8 @@
   height: 23px;
   background-image: url("../../img/rocket.svg");
   background-repeat: no-repeat;
-  bottom: 58px;
-  left: 12px;
+  bottom: 63px;
+  left: -6px;
 }
 
 .about-us__item--gift::before {
@@ -119,6 +119,6 @@
   height: 32px;
   background-image: url("../../img/gift.svg");
   background-repeat: no-repeat;
-  bottom: 58px;
-  left: 12px;
+  bottom: 55px;
+  left: 3px;
 }
