@@ -1,5 +1,6 @@
 .reviews {
   padding-bottom: 89px;
+  position: relative;
 
   @media (min-width: 768px) {
     padding-top: 83px;
@@ -11,6 +12,16 @@
     background-image: url("../../img/carpet-tablet@2x.jpg");
     background-size: 350px auto;
   }
+}
+
+.reviews::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/wave-mobile-line.svg");
+  width: 320px;
+  height: 6px;
+  left: -30px;
+  bottom: 38px;
 }
 
 .reviews__wrapper {

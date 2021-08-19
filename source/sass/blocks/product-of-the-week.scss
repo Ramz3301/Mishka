@@ -1,9 +1,20 @@
 .product-of-the-week {
   padding-bottom: 73px;
+  position: relative;
 
   @media (min-width: 1150px) {
     padding-bottom: 164px;
   }
+}
+
+.product-of-the-week::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/wave-mobile-line.svg");
+  width: 320px;
+  height: 6px;
+  left: -30px;
+  bottom: 31px;
 }
 
 .product-of-the-week__wrapper {
