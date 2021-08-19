@@ -103,6 +103,7 @@
 .product-of-the-week__term {
   width: 33%;
   margin-bottom: 20px;
+  position: relative;
 
   @media (min-width: 768px) {
     grid-column: 1/2;
@@ -111,6 +112,16 @@
 
 .product-of-the-week__term:last-of-type {
   margin-bottom: 0;
+}
+
+.product-of-the-week__term::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/table-line.svg");
+  background-repeat: no-repeat;
+  width: 260px;
+  height: 1px;
+  bottom: -13px;
 }
 
 .product-of-the-week__definition {
