@@ -63,7 +63,7 @@
 }
 
 .reviews__button {
-  padding: 14px 80px;
+  padding: 14px 78px;
 
   @media (min-width: 768px) {
     grid-row: 1/2;
@@ -83,4 +83,8 @@
     grid-column: 1/4;
     grid-row: 2/4;
   }
+}
+
+.reviews__author-id {
+  font-weight: 400;
 }

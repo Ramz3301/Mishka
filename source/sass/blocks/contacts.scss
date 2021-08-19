@@ -61,6 +61,7 @@
   font-weight: 400;
   font-size: 14px;
   margin: 0;
+  margin-bottom: 62px;
 
   @media (min-width: 768px) {
     font-size: 17px;
@@ -82,7 +83,7 @@
 
 .contacts__address {
   margin: 0;
-  margin-bottom: 62px;
+  // margin-bottom: 62px;
 
   @media (min-width: 768px) {
     margin-bottom: 50px;
@@ -91,6 +92,7 @@
 
 .contacts__align {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .contacts__button {
@@ -108,11 +110,19 @@
   background-image: url("../../img/map-mishka.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
   height: 457px;
   width: 100%;
 
   @media (min-width: 768px) {
     margin-bottom: 55px;
   }
+}
+
+.contacts__item {
+  margin-right: 33px;
+}
+
+.contacts__definition {
+  margin: 0;
 }
