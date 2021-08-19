@@ -3,6 +3,7 @@
   padding-bottom: 40px;
 
   @media (min-width: 768px) {
+    padding-top: 83px;
     padding-bottom: 57px;
   }
 
@@ -35,7 +36,7 @@
   margin-bottom: 28px;
 
   @media (min-width: 768px) {
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     position: relative;
   }
 }
@@ -46,9 +47,10 @@
     position: absolute;
     width: 47px;
     height: 81px;
-    background-image: url("../../img/flag.svg");
+    background-image: url("../../icons/flag.svg");
     background-repeat: no-repeat;
-    right: 0;
+    right: 2px;
+    bottom: -8px;
   }
 
   @media (min-width: 1150px) {
@@ -67,6 +69,7 @@
     font-size: 17px;
     display: flex;
     gap: 50px;
+    margin-bottom: 0;
   }
 
   @media (min-width: 1150px) {
@@ -86,13 +89,17 @@
   // margin-bottom: 62px;
 
   @media (min-width: 768px) {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 }
 
 .contacts__align {
   display: flex;
   margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__button {
@@ -115,12 +122,16 @@
   width: 100%;
 
   @media (min-width: 768px) {
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 }
 
 .contacts__item {
   margin-right: 33px;
+
+  @media (min-width: 768px) {
+    margin-right: 26px;
+  }
 }
 
 .contacts__definition {
