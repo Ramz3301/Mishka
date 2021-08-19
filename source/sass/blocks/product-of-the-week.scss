@@ -2,6 +2,10 @@
   padding-bottom: 73px;
   position: relative;
 
+  @media (min-width: 768px) {
+    padding-bottom: 106px;
+  }
+
   @media (min-width: 1150px) {
     padding-bottom: 164px;
   }
@@ -23,7 +27,7 @@
     background-image: url("../../icons/wave-tablet.svg");
     width: 772px;
     height: 17px;
-    bottom: 23px;
+    bottom: 56px;
     left: -50px;
   }
 }

@@ -131,8 +131,13 @@
   background-repeat: no-repeat;
   width: 40px;
   height: 62px;
-  top: 30px;
-  right: 37px;
+  top: 23px;
+  right: 36px;
+
+  @media (min-width: 768px) {
+    top: 30px;
+    right: 37px;
+  }
 }
 
 .product-of-the-type__item--toy {
@@ -146,6 +151,11 @@
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
-  top: 31px;
-  right: 33px;
+  top: 21px;
+  right: 27px;
+
+  @media (min-width: 768px) {
+    top: 31px;
+    right: 33px;
+  }
 }
