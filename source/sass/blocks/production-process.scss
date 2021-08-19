@@ -81,9 +81,13 @@
   }
 }
 
-
-.production-process__title--camera {
+.production-process__title--camera::before {
+  content: "";
+  background-image: url("../../icons/video.svg");
+  background-repeat: no-repeat;
   position: absolute;
+  width: 32px;
+  height: 22px;
   top: 13px;
   left: 30px;
 }
@@ -92,5 +96,6 @@
   @media (min-width: 768px) {
     width: auto;
     height: auto;
+    display: block;
   }
 }

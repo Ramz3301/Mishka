@@ -91,7 +91,11 @@
   padding-left: 28px;
 }
 
-.catalog__price--cart {
+.catalog__price--cart::before {
+  content: "";
+  background-image: url("../../icons/cart.svg");
+  width: 21px;
+  height: 18px;
   position: absolute;
   right: 27px;
 }
