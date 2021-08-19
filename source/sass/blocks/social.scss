@@ -15,10 +15,30 @@
 }
 
 .social__link--instagram {
-  mask-image: url("../../icons/insta.svg");
-  mask-repeat: no-repeat;
+  content: "";
+  // position: absolute;
+  display: block;
+  background-image: url("../../icons/insta.svg");
+  // mask-repeat: no-repeat;
   background-repeat: no-repeat;
   width: 22px;
   height: 21px;
-  background-color: red;
+}
+
+.social__link--facebook {
+  content: "";
+  display: block;
+  background-image: url("../../icons/fb.svg");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 28px;
+}
+
+.social__link--twitter {
+  content: "";
+  display: block;
+  background-image: url("../../icons/twitter-logo.svg");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 20px;
 }
