@@ -10,18 +10,30 @@
 .product-of-the-week::before {
   content: "";
   position: absolute;
-  background-image: url("../../icons/wave-mobile-line.svg");
-  width: 320px;
-  height: 6px;
-  left: -30px;
-  bottom: 31px;
+
+  @media (max-width: 767px) {
+    background-image: url("../../icons/wave-mobile-line.svg");
+    width: 320px;
+    height: 6px;
+    left: -30px;
+    bottom: 31px;
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../../icons/wave-tablet.svg");
+    width: 772px;
+    height: 17px;
+    bottom: 23px;
+    left: -50px;
+  }
 }
 
 .product-of-the-week__wrapper {
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 292px 265px 100px;
-    grid-template-rows: min-content 140px 150px;
+    // grid-template-columns: 292px 265px 109px;
+    grid-template-columns: 292px 249px 1fr;
+    grid-template-rows: min-content 140px 155px 60px 91px;
     align-items: center;
   }
 
@@ -38,7 +50,8 @@
   @media (min-width: 768px) {
     grid-column: 1/3;
     grid-row: 1/2;
-    margin-bottom: 38px;
+    padding-top: 50px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: 1150px) {
@@ -58,6 +71,7 @@
     line-height: 17px;
     grid-column: 3/4;
     grid-row: 1/2;
+    padding-top: 17px;
     margin: 0;
     text-align: center;
   }
@@ -128,17 +142,28 @@
 .product-of-the-week__term::before {
   content: "";
   position: absolute;
-  background-image: url("../../icons/table-line.svg");
   background-repeat: no-repeat;
-  width: 260px;
   height: 1px;
   bottom: -13px;
+  background-image: url("../../icons/table-line.svg");
+
+  @media (max-width: 767px) {
+    width: 260px;
+  }
+
+  @media (min-width: 768px) {
+    width: 292px;
+  }
 }
 
 .product-of-the-week__definition {
   width: 66%;
   margin: 0;
   padding-left: 12px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .product-of-the-week__price {
@@ -152,6 +177,8 @@
   @media (min-width: 768px) {
     font-size: 20px;
     grid-column: 1/2;
+    margin: 0;
+    padding-top: 11px;
   }
 
   @media (min-width: 1150px) {
@@ -180,7 +207,7 @@
     text-align: end;
     margin: 0;
     grid-column: 2/4;
-    grid-row: 2/5;
+    grid-row: 2/6;
   }
 
   @media (min-width: 1150px) {
@@ -206,5 +233,6 @@
   @media (min-width: 768px) {
     width: auto;
     height: auto;
+    padding-top: 13px;
   }
 }
