@@ -16,7 +16,7 @@
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 2px;
     margin-bottom: 82px;
   }
 }
@@ -29,6 +29,7 @@
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 22px;
+    margin-bottom: 108px;
   }
 }
 
@@ -41,7 +42,7 @@
   margin-bottom: 83px;
 
   @media (min-width: 768px) {
-    margin-bottom: 95px;
+    margin-bottom: 98px;
   }
 }
 
@@ -60,6 +61,11 @@
   background-repeat: no-repeat;
   bottom: 57px;
   left: 8px;
+
+  @media (min-width: 768px) {
+    bottom: 63px;
+    left: 9px;
+  }
 }
 
 .about-us__item--price::before {
@@ -71,6 +77,11 @@
   background-repeat: no-repeat;
   bottom: 67px;
   left: 0;
+
+  @media (min-width: 768px) {
+    bottom: 71px;
+    left: 1px;
+  }
 }
 
 .about-us__item--likes::before {
@@ -82,6 +93,11 @@
   background-repeat: no-repeat;
   bottom: 62px;
   left: 7px;
+
+  @media (min-width: 768px) {
+    bottom: 65px;
+    left: 9px;
+  }
 }
 
 .about-us__item--likes {
@@ -99,6 +115,11 @@
   background-repeat: no-repeat;
   bottom: 58px;
   left: 3px;
+
+  @media (min-width: 768px) {
+    bottom: 63px;
+    left: 2px;
+  }
 }
 
 .about-us__item--domestic::before {
@@ -110,6 +131,11 @@
   background-repeat: no-repeat;
   bottom: 68px;
   left: -6px;
+
+  @media (min-width: 768px) {
+    bottom: 72px;
+    left: -7px;
+  }
 }
 
 .about-us__item--gift::before {
@@ -121,4 +147,9 @@
   background-repeat: no-repeat;
   bottom: 61px;
   left: 3px;
+
+  @media (min-width: 768px) {
+    bottom: 64px;
+    left: 2px;
+  }
 }
