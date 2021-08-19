@@ -1,6 +1,8 @@
 .slider__toggles {
-  border: 1px solid #ececec;
-}
+  @media (max-width: 767px) {
+    border: 1px solid #ececec;
+  }
+  }
 
 .slider__toggle {
   border: none;
@@ -10,6 +12,10 @@
   width: 126px;
   height: 50px;
   position: relative;
+
+  @media (min-width: 768px) {
+    width: 50px;
+  }
 }
 
 .slider__toggle--left::before {
@@ -20,6 +26,11 @@
   height: 26px;
   top: 12px;
   left: 37px;
+
+  @media (min-width: 768px) {
+    top: 13px;
+    left: 19px;
+  }
 }
 
 .slider__toggle--right::before {
@@ -31,4 +42,9 @@
   top: 12px;
   left: 37px;
   transform: rotate(180deg);
+
+  @media (min-width: 768px) {
+    top: 13px;
+    left: 52px;
+  }
 }

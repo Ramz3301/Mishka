@@ -3,7 +3,7 @@
   position: relative;
 
   @media (min-width: 768px) {
-    padding-top: 83px;
+    padding-top: 80px;
     background-image: url("../../img/carpet-tablet.jpg");
     background-repeat: no-repeat;
   }
@@ -17,17 +17,28 @@
 .reviews::before {
   content: "";
   position: absolute;
-  background-image: url("../../icons/wave-mobile-line.svg");
-  width: 320px;
-  height: 6px;
-  left: -30px;
-  bottom: 38px;
+
+  @media (max-width: 767px) {
+    background-image: url("../../icons/wave-mobile-line.svg");
+    width: 320px;
+    height: 6px;
+    left: -30px;
+    bottom: 38px;
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../../icons/wave-tablet.svg");
+    width: 772px;
+    height: 17px;
+    bottom: -14px;
+    left: -50px;
+  }
 }
 
 .reviews__wrapper {
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 1fr 175px;
     grid-template-rows: min-content 1fr min-content;
   }
 }
@@ -46,6 +57,7 @@
 
   @media (min-width: 768px) {
     font-size: 17px;
+    margin-bottom: 58px;
   }
 }
 
@@ -55,7 +67,8 @@
   line-height: 24px;
 
   @media (min-width: 768px) {
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: 1150px) {
@@ -70,6 +83,7 @@
   @media (min-width: 768px) {
     grid-column: 3/4;
     grid-row: 3/4;
+    margin-bottom: 33px;
   }
 }
 
@@ -79,7 +93,7 @@
   @media (min-width: 768px) {
     grid-row: 1/2;
     grid-column: 3/4;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     padding: 14px 40px;
   }
 }
@@ -98,4 +112,9 @@
 
 .reviews__author-id {
   font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
