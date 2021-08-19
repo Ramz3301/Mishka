@@ -9,6 +9,11 @@
     grid-template-columns: 137px 265px;
     padding-top: 11px;
   }
+
+  @media (min-width: 1150px) {
+    grid-template-columns: 84px 265px;
+    padding: 0;
+  }
 }
 
 .main-nav__link {
@@ -20,6 +25,10 @@
   @media (min-width: 768px) {
     font-size: 17px;
     padding-right: 24px;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 0;
   }
 }
 
@@ -52,8 +61,8 @@
   left: -40px;
 
   @media (min-width: 768px) {
-    left: -52px;
     top: 2px;
+    left: -52px;
   }
 }
 
@@ -67,8 +76,13 @@
   height: 18px;
 
   @media (min-width: 768px) {
-    left: -23px;
     top: 3px;
+    left: -23px;
+  }
+
+  @media (min-width: 1150px) {
+    top: 4px;
+    left: -9px;
   }
 }
 
@@ -76,5 +90,11 @@
   @media (max-width: 767px) {
     transform: scale(1);
     position: static;
+  }
+}
+
+.main-nav__item--desktop {
+  @media (min-width: 1150px) {
+    margin-left: 83px;
   }
 }

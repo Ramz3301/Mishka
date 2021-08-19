@@ -15,8 +15,8 @@
 
   @media (min-width: 1150px) {
     padding: 0;
-    grid-template-columns: 184px 265px 200px 85px 317px;
-    grid-template-rows: 88px 45px;
+    grid-template-columns: 184px 195px 1fr 85px 265px;
+    grid-template-rows: 88px 64px;
     align-items: center;
     height: 88px;
   }
@@ -38,6 +38,8 @@
   @media (min-width: 1150px) {
     grid-column: 3/4;
     text-align: center;
+    padding-top: 10px;
+    padding-right: 31px;
   }
 }
 
@@ -77,8 +79,9 @@
 
   @media (min-width: 1150px) {
     grid-row: 1/3;
-    grid-template-columns: 190px 190px;
+    grid-template-columns: 184px 190px;
     grid-template-rows: 88px 45px;
+    column-gap: 36px;
   }
 }
 
@@ -193,14 +196,8 @@
   }
 }
 
-.page-header__menu-list {
-  @media (max-width: 767px) {
-    background-color: var(--white);
-  }
-}
-
-// .page-header__search {
-//   @media (min-width: 768px) {
-//     display: none;
+// .page-header__menu-list {
+//   @media (max-width: 767px) {
+//     background-color: var(--white);
 //   }
 // }

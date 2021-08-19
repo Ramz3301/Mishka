@@ -1,0 +1,17 @@
+.menu-list {
+  @media (max-width: 767px) {
+    background-color: var(--white);
+  }
+}
+
+.menu-list__span {
+  @media (min-width: 1150px) {
+    font-size: 17px;
+  }
+}
+
+.menu-list__item--desktop {
+  @media (min-width: 1150px) {
+    padding-bottom: 18px;
+  }
+}
