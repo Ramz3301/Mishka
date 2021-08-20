@@ -12,6 +12,11 @@
     background-image: url("../../img/carpet-tablet@2x.jpg");
     background-size: 350px auto;
   }
+
+  @media (min-width: 1150px) {
+    padding-top: 78px;
+    padding-bottom: 157px;
+  }
 }
 
 .reviews::before {
@@ -33,6 +38,14 @@
     bottom: -14px;
     left: -50px;
   }
+
+  @media (max-width: 1150px) {
+    background-image: url("../../icons/wave-desktop.svg");
+    width: 1050px;
+    height: 23px;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .reviews__wrapper {
@@ -40,6 +53,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 175px;
     grid-template-rows: min-content 1fr min-content;
+  }
+
+  @media (min-width: 1150px) {
+    width: 876px;
+    margin-left: auto;
   }
 }
 
@@ -59,6 +77,10 @@
     font-size: 17px;
     margin-bottom: 58px;
   }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 40px;
+  }
 }
 
 .reviews__author-name {
@@ -72,7 +94,8 @@
   }
 
   @media (min-width: 1150px) {
-    line-height: 24px;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
