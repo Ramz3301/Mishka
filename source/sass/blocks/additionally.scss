@@ -29,3 +29,10 @@
     width: 700px;
   }
 }
+
+.additionally__title {
+  @media (min-width: 768px) {
+    padding-top: 20px;
+    margin-right: 128px;
+  }
+}
