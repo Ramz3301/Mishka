@@ -1,3 +1,11 @@
+.checkbox-filter {
+  padding-top: 35px;
+
+  @media (min-width: 768px) {
+    // background-color: var(--lightgrey);
+  }
+}
+
 .checkbox-filter__list {
   @media (min-width: 768px) {
     display: flex;
@@ -11,17 +19,13 @@
 }
 
 .checkbox-filter__item {
-  margin-bottom: 30px;
-
   @media (min-width: 768px) {
     width: 230px;
   }
 }
 
-.checkbox-filter {
-  @media (min-width: 768px) {
-    // background-color: var(--lightgrey);
-  }
+.checkbox-filter__item {
+  margin-bottom: 43px;
 }
 
 .checkbox-filter__label {
@@ -29,7 +33,7 @@
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-left: 50px;
+  padding-left: 61px;
 }
 
 .checkbox-filter__input:checked + .checkbox-filter__label::before {

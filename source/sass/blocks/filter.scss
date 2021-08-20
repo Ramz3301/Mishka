@@ -12,8 +12,10 @@
 }
 
 .filter__button {
-  padding: 14px 43px;
+  padding: 16px 45px;
   margin-bottom: 55px;
+  font-size: 17px;
+  line-height: 16px;
 
   @media (min-width: 768px) {
     line-height: 16px;
@@ -27,7 +29,7 @@
 }
 
 .filter__position {
-  padding-top: 15px;
+  padding-top: 9px;
 
   @media (min-width: 768px) {
     display: flex;

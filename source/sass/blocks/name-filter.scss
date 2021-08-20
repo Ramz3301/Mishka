@@ -1,3 +1,7 @@
+.name-filter {
+  padding-bottom: 13px;
+}
+
 .name-filter__item {
   display: flex;
   flex-direction: column;
@@ -10,4 +14,15 @@
 
 .name-filter__input {
   order: 2;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+.name-filter__list {
+  padding-top: 30px;
+}
+
+.name-filter__label {
+  // margin-bottom: 16px;
+  margin-bottom: 34px;
 }

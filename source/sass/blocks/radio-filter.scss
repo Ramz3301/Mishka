@@ -1,12 +1,18 @@
+.radio-filter {
+  padding-top: 35px;
+  padding-bottom: 18px;
+  margin: 0;
+}
+
 .radio-filter__item {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .radio-filter__input:checked + .radio-filter__label::before {
   content: "";
   position: absolute;
   left: 0;
-  top: -30px;
+  top: 0px;
   width: 42px;
   height: 42px;
   background-image: url("../../img/form/radio-center.svg");
@@ -16,11 +22,13 @@
 .radio-filter__label::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 42px;
-  height: 42px;
-  background-color: #444444;
+  left: -2px;
+  top: -4px;
+  width: 40px;
+  height: 38px;
+  // background-color: #444444;
+  border-radius: 50%;
+  border: 2px solid black;
 }
 
 .radio-filter__label {
@@ -28,5 +36,5 @@
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-left: 50px;
+  padding-left: 60px;
 }

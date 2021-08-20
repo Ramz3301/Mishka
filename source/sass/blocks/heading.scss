@@ -5,6 +5,7 @@
   text-align: center;
   font-size: 27px;
   line-height: 30px;
+  position: relative;
 
   @media (min-width: 768px) {
     padding: 99px 0 74px;
@@ -35,6 +36,6 @@
     background-image: url("../../icons/wave-catalog-desktop.svg");
     width: 1150px;
     height: 34px;
-    bottom: -35px;
+    bottom: -22px;
   }
 }

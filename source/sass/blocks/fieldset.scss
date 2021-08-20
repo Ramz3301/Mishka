@@ -3,7 +3,7 @@
   border-top: 1px solid var(--lightgreen);
   padding: 0;
   // margin: 0;
-  padding-top: 40px;
+  // padding-top: 35px;
 
   @media (min-width: 768px) {
     display: flex;
@@ -19,7 +19,7 @@
 }
 
 .fieldset:not(:last-of-type) {
-  padding-bottom: 40px;
+  // padding-bottom: 40px;
 }
 
 .fieldset__title {
@@ -27,7 +27,8 @@
   line-height: 16px;
   color: var(--lightgreen);
   padding: 0;
-  padding-right: 10px;
+  padding-right: 21px;
+  text-transform: uppercase;
 
   @media (min-width: 768px) {
     float: left;

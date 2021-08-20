@@ -1,5 +1,5 @@
 .additionally {
-  padding-top: 30px;
+  padding-top: 22px;
 
   @media (min-width: 768px) {
     padding-top: 50px;
@@ -14,8 +14,12 @@
 
 .additionally-area {
   resize: none;
+  border: 2px solid var(--charcoal);
   width: 260px;
   height: 142px;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 15px 17px;
 
   @media (min-width: 768px) {
     width: 501px;
