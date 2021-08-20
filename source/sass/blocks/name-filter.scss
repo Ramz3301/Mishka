@@ -2,8 +2,8 @@
   padding-bottom: 13px;
 
   @media (min-width: 768px) {
-    padding-top: 66px;
-    padding-bottom: 22px;
+    padding-top: 67px;
+    padding-bottom: 9px;
   }
 }
 
@@ -14,6 +14,7 @@
 
   @media (min-width: 768px) {
     flex-direction: row;
+    margin-bottom: 42px;
   }
 }
 
@@ -32,6 +33,15 @@
 }
 
 .name-filter__label {
-  // margin-bottom: 16px;
   margin-bottom: 34px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+}
+
+.name-filter__title {
+  @media (min-width: 768px) {
+    margin-right: 125px;
+  }
 }
