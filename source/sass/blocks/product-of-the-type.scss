@@ -36,6 +36,13 @@
     bottom: -10px;
     z-index: 10;
   }
+
+  @media (min-width: 1150px) {
+    background-image: url("../../icons/wave-header-desktop.svg");
+    width: 1250px;
+    height: 34px;
+    bottom: -17px;
+  }
 }
 
 .product-of-the-type__image {
@@ -106,6 +113,11 @@
     position: absolute;
     bottom: -25px;
     width: 668px;
+  }
+
+  @media (min-width: 1150px) {
+    width: 1050px;
+    bottom: -27px;
   }
 }
 
