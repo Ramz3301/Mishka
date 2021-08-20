@@ -54,3 +54,9 @@
     padding-bottom: 103px;
   }
 }
+
+.page__break {
+  @media (min-width: 768px) and (max-width: 1149px) {
+    display: none;
+  }
+}
