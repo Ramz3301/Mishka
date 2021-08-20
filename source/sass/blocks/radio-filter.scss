@@ -17,6 +17,12 @@
   }
 }
 
+.radio-filter__list {
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
+}
+
 .radio-filter__input:checked + .radio-filter__label::before {
   content: "";
   position: absolute;
@@ -58,4 +64,10 @@
   cursor: pointer;
   user-select: none;
   padding-left: 60px;
+}
+
+.radio-filter__title {
+  @media (min-width: 768px) {
+    margin-right: 121px;
+  }
 }

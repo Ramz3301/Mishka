@@ -1,5 +1,10 @@
 .name-filter {
   padding-bottom: 13px;
+
+  @media (min-width: 768px) {
+    padding-top: 66px;
+    padding-bottom: 22px;
+  }
 }
 
 .name-filter__item {
@@ -15,11 +20,15 @@
 .name-filter__input {
   order: 2;
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000000;
 }
 
 .name-filter__list {
   padding-top: 30px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .name-filter__label {

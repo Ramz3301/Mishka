@@ -2,24 +2,16 @@
   border: none;
   border-top: 1px solid var(--lightgreen);
   padding: 0;
-  // margin: 0;
-  // padding-top: 35px;
 
   @media (min-width: 768px) {
     display: flex;
     border: none;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   @media (min-width: 1150px) {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-}
-
-.fieldset:not(:last-of-type) {
-  // padding-bottom: 40px;
 }
 
 .fieldset__title {
@@ -32,7 +24,7 @@
 
   @media (min-width: 768px) {
     float: left;
-    margin-right: 100px;
+    padding: 0;
   }
 }
 
