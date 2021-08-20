@@ -51,6 +51,7 @@
   font-size: 13px;
   border-bottom: 1px solid var(--lightgrey);
   margin: 0;
+  margin-bottom: 18px;
 
   @media (min-width: 768px) {
     grid-column: 2/3;
@@ -76,8 +77,9 @@
 
 .catalog__title {
   margin: 0;
+  font-size: 17px;
   line-height: 24px;
-  padding-top: 28px;
+  padding-top: 18px;
   margin-bottom: 6px;
 
   @media (min-width: 768px) {

@@ -39,7 +39,7 @@
     left: -50px;
   }
 
-  @media (max-width: 1150px) {
+  @media (min-width: 1150px) {
     background-image: url("../../icons/wave-desktop.svg");
     width: 1050px;
     height: 23px;

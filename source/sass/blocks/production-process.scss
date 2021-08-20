@@ -30,8 +30,10 @@
 .production-process__text {
   font-weight: 400;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
   padding-left: 30px;
+  font-size: 13px;
+  line-height: 24px;
 
   @media (min-width: 1150px) {
     grid-column: 2/3;
@@ -66,7 +68,7 @@
 
 .production-process__video {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
 
   @media (min-width: 768px) {
     grid-row: 1/2;
