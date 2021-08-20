@@ -1,3 +1,9 @@
+.about-us {
+  @media (min-width: 1150px) {
+    padding-top: 68px;
+  }
+}
+
 .about-us__wrapper {
   @media (min-width: 1150px) {
     width: 700px;
