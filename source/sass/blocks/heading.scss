@@ -7,6 +7,7 @@
   line-height: 30px;
 
   @media (min-width: 768px) {
+    padding: 99px 0 74px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -14,5 +15,25 @@
   @media (min-width: 1150px) {
     font-size: 53px;
     line-height: 57px;
+  }
+}
+
+.heading::before {
+  @media (min-width: 768px) {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/wave-header-tablet.svg");
+    width: 770px;
+    height: 24px;
+    bottom: -1px;
+    left: 0;
+    z-index: 10;
+  }
+
+  @media (min-width: 1150px) {
+    background-image: url("../../icons/wave-header-desktop.svg");
+    width: 1250px;
+    height: 34px;
+    bottom: -17px;
   }
 }
