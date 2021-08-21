@@ -7,6 +7,11 @@
     padding-top: 23px;
     padding-bottom: 11px;
   }
+
+  @media (min-width: 1150px) {
+    padding-top: 18px;
+    padding-bottom: 11px;
+  }
 }
 
 .radio-filter__item {
@@ -69,5 +74,9 @@
 .radio-filter__title {
   @media (min-width: 768px) {
     margin-right: 121px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-right: 68px;
   }
 }

@@ -60,3 +60,9 @@
     display: none;
   }
 }
+
+.page__break--form {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

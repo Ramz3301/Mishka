@@ -6,6 +6,10 @@
     padding-top: 67px;
     padding-bottom: 12px;
   }
+
+  @media (min-width: 1150px) {
+    padding-bottom: 11px;
+  }
 }
 
 .checkbox-filter__list {
@@ -17,7 +21,8 @@
   }
 
   @media (min-width: 1150px) {
-    width: 750px;
+    width: 760px;
+    column-gap: 33px;
   }
 }
 
@@ -71,11 +76,20 @@
     left: -21px;
     top: -17px;
   }
+
+  @media (min-width: 1150px) {
+    top: -18px;
+  }
 }
 
 .checkbox-filter__title {
   @media (min-width: 768px) {
     margin-left: 20px;
     margin-right: 144px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-left: 0;
+    margin-right: 91px;
   }
 }
