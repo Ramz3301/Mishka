@@ -21,6 +21,14 @@
   border: none;
   border-bottom: 2px solid #000000;
   background-color: transparent;
+
+  @media (min-width: 768px) {
+    width: 500px;
+  }
+
+  @media (min-width: 1150px) {
+    width: 700px;
+  }
 }
 
 .contacts-filter__label {
