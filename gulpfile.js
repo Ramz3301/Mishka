@@ -7,6 +7,10 @@ const postcssImport = require("postcss-import");
 const postScss = require("postcss-scss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const htmlmin = require("gulp-htmlmin");
+const csso = require("postcss-csso");
+const rename = require("gulp-rename");
+const terser = require("gulp-terser");
 
 // Styles
 
@@ -19,20 +23,45 @@ const styles = () => {
     ], { syntax: postScss }))
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
-    .pipe(gulp.dest("source/css", { sourcemaps: "." }))
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+ // HTML
+
+ const html = () => {
+   return gulp.src("source/*.html")
+   .pipe(htmlmin({ collapseWhitespace: true }))
+   .pipe(gulp.dest("build"));
+ }
+
+exports.html = html;
+
+
+// Script
+
+const script = () => {
+  return gulp.src("source/js/script.js")
+  .pipe(terser())
+  .pipe(rename("script.min.js"))
+  .pipe(gulp.dest("build/js"))
+  .pipe(sync.stream());
+}
+
+exports.script = script;
 
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -51,5 +80,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  styles, html, server, watcher
 );
