@@ -11,6 +11,9 @@ const htmlmin = require("gulp-htmlmin");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const terser = require("gulp-terser");
+const squoosh = require("gulp-libsquoosh");
+const webp = require("gulp-webp");
+const svgsprite = require("gulp-svg-sprite");
 
 // Styles
 
@@ -50,11 +53,50 @@ const script = () => {
   return gulp.src("source/js/script.js")
   .pipe(terser())
   .pipe(rename("script.min.js"))
-  .pipe(gulp.dest("build/js"))
-  .pipe(sync.stream());
+  .pipe(gulp.dest("build/js"));
 }
 
 exports.script = script;
+
+
+// Images
+
+const optimizeImages = () => {
+  return gulp.src("source/img/**/*.{svg, jpg, png}")
+  .pipe(squoosh())
+  .pipe(gulp.dest("build/img"));
+}
+
+exports.images = optimizeImages;
+
+const copyImages = () => {
+  return gulp.src("source/img/**/*.{svg, jpg, png}")
+  .pipe(gulp.dest("build/img"));
+}
+
+exports.images = copyImages;
+
+
+// WebP
+
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg, png}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("build/img"))
+}
+
+exports.createWebp = createWebp;
+
+// Sprite
+
+const sprite = () => {
+  return gulp.src("source/icons/*.svg")
+  .pipe(svgsprite())
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/icons"));
+}
+
+exports.sprite = sprite;
 
 // Server
 
@@ -80,5 +122,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, html, server, watcher
+  styles, html, script, copyImages, createWebp, sprite, server, watcher
 );
