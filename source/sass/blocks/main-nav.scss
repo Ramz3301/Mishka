@@ -46,6 +46,8 @@
   display: block;
   background: url("../../icons/sprite.svg#cart");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 21px;
   height: 18px;
   position: absolute;
@@ -64,6 +66,8 @@
   left: -40px;
   background: url("../../icons/sprite.svg#search");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 18px;
   height: 18px;
 
