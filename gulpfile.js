@@ -143,11 +143,18 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reload
+
+const reload = (done) => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/js/*.js", gulp.series(scripts, reload));
+  gulp.watch("source/js/*.js", gulp.series(script, reload));
   gulp.watch("source/*.html", gulp.series(html, reload));
   gulp.watch("source/icons/**/*.svg", gulp.series(sprite, reload));
 }

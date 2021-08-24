@@ -17,7 +17,7 @@
   position: absolute;
 
   @media (max-width: 767px) {
-    background-image: url("../../icons/wave-mobile-line.svg");
+    background-image: url("../../icons/sprite.svg#wave-mobile-line.svg");
     width: 320px;
     height: 6px;
     left: -30px;
@@ -25,7 +25,7 @@
   }
 
   @media (min-width: 768px) {
-    background-image: url("../../icons/wave-tablet.svg");
+    background-image: url("../../icons/sprite.svg#wave-tablet.svg");
     width: 772px;
     height: 17px;
     bottom: 56px;
@@ -33,7 +33,7 @@
   }
 
   @media (min-width: 1150px) {
-    background-image: url("../../icons/wave-desktop.svg");
+    background-image: url("../../icons/sprite.svg#wave-desktop.svg");
     width: 1050px;
     height: 23px;
     left: 0;
@@ -163,7 +163,7 @@
   background-repeat: no-repeat;
   height: 1px;
   bottom: -13px;
-  background-image: url("../../icons/table-line.svg");
+  background-image: url("../../icons/sprite.svg#table-line.svg");
 
   @media (max-width: 767px) {
     width: 260px;

@@ -30,7 +30,7 @@
   @media (min-width: 768px) {
     content: "";
     position: absolute;
-    background-image: url("../../icons/wave-header-tablet.svg");
+    background-image: url("../../icons/sprite.svg#wave-header-tablet.svg");
     width: 770px;
     height: 24px;
     bottom: -10px;
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: 1150px) {
-    background-image: url("../../icons/wave-header-desktop.svg");
+    background-image: url("../../icons/sprite.svg#wave-header-desktop.svg");
     width: 1250px;
     height: 34px;
     bottom: -17px;
@@ -145,7 +145,7 @@
 .product-of-the-type__item--luster::before {
   content: "";
   position: absolute;
-  background-image: url("../../icons/interior.svg");
+  background-image: url("../../icons/sprite.svg#interior.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 62px;
@@ -165,7 +165,7 @@
 .product-of-the-type__item--toy::before {
   content: "";
   position: absolute;
-  background-image: url("../../icons/toy.svg");
+  background-image: url("../../icons/sprite.svg#toy.svg");
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
