@@ -99,7 +99,6 @@ const sprite = () => {
       }
     },
   }))
-  // .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/icons"));
 }
 
