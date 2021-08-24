@@ -95,11 +95,11 @@ const sprite = () => {
   .pipe(svgSprite({
     mode: {
       stack: {
-        sprite: ""
+        sprite: "../sprite.svg"
       }
     },
   }))
-  .pipe(rename("sprite.svg"))
+  // .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/icons"));
 }
 
@@ -158,20 +158,20 @@ exports.default = gulp.series(
 
 // Build
 
-// const build = gulp.series(
-//   clean,
-//   copy,
-//   optimizeImages,
-//   gulp.parallel(
-//     styles,
-//     html,
-//     script,
-//     sprite,
-//     createWebp
-//   ),
-// );
+const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    html,
+    script,
+    sprite,
+    createWebp
+  ),
+);
 
-// exports.build = build;
+exports.build = build;
 
 // Default
 
