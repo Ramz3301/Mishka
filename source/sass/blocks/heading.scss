@@ -25,7 +25,8 @@
   @media (min-width: 768px) {
     content: "";
     position: absolute;
-    background-image: url("../../icons/sprite.svg#wave-header-tablet.svg");
+    background-image: url("../../icons/sprite.svg#wave-header-tablet");
+    background-repeat: no-repeat;
     width: 770px;
     height: 24px;
     bottom: -1px;
@@ -34,7 +35,7 @@
   }
 
   @media (min-width: 1150px) {
-    background-image: url("../../icons/sprite.svg#wave-catalog-desktop.svg");
+    background-image: url("../../icons/sprite.svg#wave-catalog-desktop");
     width: 1150px;
     height: 34px;
     bottom: -22px;

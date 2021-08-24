@@ -123,7 +123,8 @@
 
 .catalog__price--cart::before {
   content: "";
-  background-image: url("../../icons/sprite.svg#cart.svg");
+  background-image: url("../../icons/sprite.svg#cart");
+  background-repeat: no-repeat;
   width: 21px;
   height: 18px;
   position: absolute;

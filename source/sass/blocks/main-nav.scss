@@ -41,16 +41,6 @@
   }
 }
 
-// .main-nav__link--cart {
-//   // position: absolute;
-//   // left: 30px;
-
-//   @media (min-width: 768px) {
-//     position: static;
-//     margin-right: 30px;
-//   }
-// }
-
 .main-nav__link--cart::before {
   content: "";
   display: block;
@@ -72,7 +62,8 @@
   display: block;
   position: absolute;
   left: -40px;
-  background: url("../../icons/sprite.svg#search.svg");
+  background: url("../../icons/sprite.svg#search");
+  background-repeat: no-repeat;
   width: 18px;
   height: 18px;
 

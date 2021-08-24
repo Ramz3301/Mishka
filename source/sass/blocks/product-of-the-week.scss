@@ -17,7 +17,8 @@
   position: absolute;
 
   @media (max-width: 767px) {
-    background-image: url("../../icons/sprite.svg#wave-mobile-line.svg");
+    background-image: url("../../icons/sprite.svg#wave-mobile-line");
+    background-repeat: no-repeat;
     width: 320px;
     height: 6px;
     left: -30px;
@@ -25,7 +26,7 @@
   }
 
   @media (min-width: 768px) {
-    background-image: url("../../icons/sprite.svg#wave-tablet.svg");
+    background-image: url("../../icons/sprite.svg#wave-tablet");
     width: 772px;
     height: 17px;
     bottom: 56px;
@@ -33,7 +34,7 @@
   }
 
   @media (min-width: 1150px) {
-    background-image: url("../../icons/sprite.svg#wave-desktop.svg");
+    background-image: url("../../icons/sprite.svg#wave-desktop");
     width: 1050px;
     height: 23px;
     left: 0;
@@ -44,14 +45,12 @@
 .product-of-the-week__wrapper {
   @media (min-width: 768px) {
     display: grid;
-    // grid-template-columns: 292px 265px 109px;
     grid-template-columns: 292px 249px 1fr;
     grid-template-rows: min-content 140px 155px 60px 91px;
     align-items: center;
   }
 
   @media (min-width: 1150px) {
-    // grid-template-columns: min-content 292px 1fr;
     grid-template-columns: 175px 292px 1fr;
     grid-template-rows: min-content 140px 180px 143px 7px;
   }
@@ -160,10 +159,10 @@
 .product-of-the-week__term::before {
   content: "";
   position: absolute;
-  background-repeat: no-repeat;
   height: 1px;
   bottom: -13px;
-  background-image: url("../../icons/sprite.svg#table-line.svg");
+  background-image: url("../../icons/sprite.svg#table-line");
+  background-repeat: no-repeat;
 
   @media (max-width: 767px) {
     width: 260px;

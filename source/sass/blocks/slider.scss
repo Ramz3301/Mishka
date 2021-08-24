@@ -21,7 +21,8 @@
 .slider__toggle--left::before {
   content: "";
   position: absolute;
-  background-image: url("../../icons/sprite.svg#arrow-left.svg");
+  background-image: url("../../icons/sprite.svg#arrow-left");
+  background-repeat: no-repeat;
   width: 50px;
   height: 26px;
   top: 12px;
@@ -36,7 +37,8 @@
 .slider__toggle--right::before {
   content: "";
   position: absolute;
-  background-image: url("../../icons/sprite.svg#arrow-left.svg");
+  background-image: url("../../icons/sprite.svg#arrow-left");
+  background-repeat: no-repeat;
   width: 50px;
   height: 26px;
   top: 12px;

@@ -22,7 +22,6 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/header-image@2x.jpg");
-    // background-size: 1150px auto;
   }
 }
 
@@ -30,7 +29,8 @@
   @media (min-width: 768px) {
     content: "";
     position: absolute;
-    background-image: url("../../icons/sprite.svg#wave-header-tablet.svg");
+    background-image: url("../../icons/sprite.svg#wave-header-tablet");
+    background-repeat: no-repeat;
     width: 770px;
     height: 24px;
     bottom: -10px;
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: 1150px) {
-    background-image: url("../../icons/sprite.svg#wave-header-desktop.svg");
+    background-image: url("../../icons/sprite.svg#wave-header-desktop");
     width: 1250px;
     height: 34px;
     bottom: -17px;
@@ -50,32 +50,6 @@
     height: 305px;
   }
 }
-
-// .product-of-the-type__image {
-//   background-image: url("../../img/header-image.jpg");
-//   background-repeat: no-repeat;
-//   width: 320px;
-//   height: 305px;
-//   background-position: 50% 0;
-//   background-size: cover;
-//   margin: 0 auto;
-
-//   @media (min-width: 768px) {
-//     width: 100%;
-//     height: 746px;
-//     background-position: 50% 0;
-//     // background-color: var(--lightgrey);
-//   }
-
-//   @media (min-width: 1150px) {
-//     background-position: 50% 30%;
-//   }
-
-//   @media (min-resolution: 2dppx) {
-//     background-image: url("../../img/header-image@2x.jpg");
-//     // background-size: 1150px auto;
-//   }
-// }
 
 .product-of-the-type__caption {
   font-size: 27px;
@@ -145,7 +119,7 @@
 .product-of-the-type__item--luster::before {
   content: "";
   position: absolute;
-  background-image: url("../../icons/sprite.svg#interior.svg");
+  background-image: url("../../icons/sprite.svg#interior");
   background-repeat: no-repeat;
   width: 40px;
   height: 62px;
@@ -165,7 +139,7 @@
 .product-of-the-type__item--toy::before {
   content: "";
   position: absolute;
-  background-image: url("../../icons/sprite.svg#toy.svg");
+  background-image: url("../../icons/sprite.svg#toy");
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
