@@ -83,7 +83,7 @@
                       <source type="image/webp" srcset="img/catalog/mobile/bunny-mobile.webp 1x, img/catalog/mobile/bunny-mobile@2x.webp 2x">
                       <source media="(min-width: 1150px)" srcset="img/catalog/desktop/bunny-desktop.jpg 1x, img/catalog/desktop/bunny-desktop@2x.jpg 2x">
                       <source media="(min-width:768px)" srcset="img/catalog/tablet/bunny-tablet.jpg 1x, img/catalog/tablet/bunny-tablet@2x.jpg 2x">
-                      <img class="catalog__product-photo" src="img/catalog/mobile/bunny-mobile.jpg" srcset="img/catalog/mobile/bunny-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаный заяц, ощущение одежды сшитой синими нитками">
+                      <img class="catalog__product-photo" src="img/catalog/mobile/bunny-mobile.jpg 1x" srcset="img/catalog/mobile/bunny-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаный заяц, ощущение одежды сшитой синими нитками">
                     </picture>
                   </div>
                   <p class="catalog__size">Рост 30 см, вес 200 г</p>
@@ -96,6 +96,9 @@
                   <h3 class="catalog__title">Корзинка для белья</h3>
                   <div class="catalog__photo-position">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/desktop/laundry-basket-desktop.webp 1x, img/catalog/desktop/laundry-basket-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/tablet/laundry-basket-tablet.webp 1x, img/catalog/tablet/laundry-basket-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/mobile/laundry-basket-mobile.webp 1x, img/catalog/mobile/laundry-basket-mobile@2x.webp 2x">
                       <source media="(min-width: 1150px)" srcset="img/catalog/desktop/laundry-basket-desktop.jpg 1x, img/catalog/desktop/laundry-basket-desktop@2x.jpg 2x">
                       <source media="(min-width:768px)" srcset="img/catalog/tablet/laundry-basket-tablet.jpg 1x, img/catalog/tablet/laundry-basket-tablet@2x.jpg 2x">
                       <img class="catalog__product-photo" src="img/catalog/mobile/laundry-basket-mobile.jpg" srcset="img/catalog/mobile/laundry-basket-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная красно-белая корзинка, внутри белье рулонами">
@@ -112,9 +115,12 @@
                   <h3 class="catalog__title">Большая корзинка<br>для игрушек</h3>
                   <div class="catalog__photo-position">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/desktop/basket-for-toys-desktop.webp 1x, img/catalog/desktopbasket-for-toys-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/tablet/basket-for-toys-tablet.webp 1x, img/catalog/tablet.basket-for-toys-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/mobile/basket-for-toys-mobile.webp 1x, img/catalog/mobile/basket-for-toys-mobile@2x.webp 2x">
                       <source media="(min-width: 1150px)" srcset="img/catalog/desktop/basket-for-toys-desktop.jpg 1x, img/catalog/desktop/basket-for-toys-desktop@2x.jpg 2x">
                       <source media="(min-width:768px)" srcset="img/catalog/tablet/basket-for-toys-tablet.jpg 1x, img/catalog/tablet/basket-for-toys-tablet@2x.jpg 2x">
-                      <img class="catalog__product-photo" src="img/catalog/mobile/basket-for-toys-mobile.jpg" srcset="img/catalog/mobile/basket-for-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Большая вязаная бело-зеленая корзинка, внутри игрушки">
+                      <img class="catalog__product-photo" src="img/catalog/mobile/basket-for-toys-mobile.jpg 1x" srcset="img/catalog/mobile/basket-for-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Большая вязаная бело-зеленая корзинка, внутри игрушки">
                     </picture>
                   </div>
                   <p class="catalog__size">Диаметр 30 см, высота 30 см</p>
@@ -135,6 +141,9 @@
             </video> -->
             <p class="production-process__video">
               <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/desktop/production-video-desktop.webp 1x, img/catalog/desktop/production-video-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/production-video-tablet.webp 1x, img/catalog/tablet/production-video-tablet@2x.webp 2x">
+                <source media="(min-width: 320px)" srcset="img/catalog/mobile/production-video-mobile.webp 1x, img/catalog/mobile/production-video-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/catalog/desktop/production-video-desktop.jpg 1x, img/catalog/desktop/production-video-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/tablet/production-video-tablet.jpg 1x, img/catalog/tablet/production-video-tablet@2x.jpg 2x">
                 <img class="production-process__picture" src="img/catalog/mobile/production-video-mobile.jpg" srcset="img/catalog/mobile/production-video-mobile@2x.jpg 2x" width="260" height="150" alt="Вязаная корзинка салатово-серого цвета ">
@@ -208,21 +217,7 @@
         </form>
       </div>
     </section>
-    <script>
-      let pageHeader = document.querySelector('.page-header');
-      let headerToggle = document.querySelector('.page-header__toggle');
-
-      // pageHeader.classList.remove('page-header--nojs')
-
-      headerToggle.addEventListener('click', function() {
-        if (pageHeader.classList.contains('page-header--closed')) {
-          pageHeader.classList.remove('page-header--closed');
-          pageHeader.classList.add('page-header--opened');
-        } else {
-          pageHeader.classList.add('page-header--closed');
-          pageHeader.classList.remove('page-header--opened');
-        }
-      });
+    <script src="js/script.min.js">
     </script>
   </body>
 </html>
