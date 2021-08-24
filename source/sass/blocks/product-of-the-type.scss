@@ -2,7 +2,7 @@
   background-image: url("../../img/header-image.jpg");
   background-repeat: no-repeat;
   width: 320px;
-  // height: 305px;
+  // height: 273px;
   background-position: 50% 0;
   background-size: cover;
   margin: 0 auto;
@@ -31,6 +31,8 @@
     position: absolute;
     background-image: url("../../icons/sprite.svg#wave-header-tablet");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 770px;
     height: 24px;
     bottom: -10px;
@@ -47,14 +49,14 @@
 
 .product-of-the-type__image {
   @media (max-width: 767px) {
-    height: 305px;
+    height: 283px;
   }
 }
 
 .product-of-the-type__caption {
   font-size: 27px;
   text-align: center;
-  padding-top: 95px;
+  padding-top: 73px;
 
   @media (min-width: 768px) {
     font-size: 43px;

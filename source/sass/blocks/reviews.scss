@@ -22,6 +22,8 @@
 .reviews::before {
   content: "";
   position: absolute;
+  background-position: center;
+  background-size: cover;
 
   @media (max-width: 767px) {
     background-image: url("../../icons/sprite.svg#wave-mobile-line");

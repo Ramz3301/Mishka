@@ -15,6 +15,8 @@
 .product-of-the-week::before {
   content: "";
   position: absolute;
+  background-position: center;
+  background-size: cover;
 
   @media (max-width: 767px) {
     background-image: url("../../icons/sprite.svg#wave-mobile-line");
@@ -163,6 +165,8 @@
   bottom: -13px;
   background-image: url("../../icons/sprite.svg#table-line");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media (max-width: 767px) {
     width: 260px;
