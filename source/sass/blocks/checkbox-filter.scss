@@ -46,17 +46,24 @@
 .checkbox-filter__input:checked + .checkbox-filter__label::before {
   content: "";
   position: absolute;
-  left: 4px;
-  top: -4px;
-  width: 27px;
-  height: 38px;
+  left: 7px;
+  top: 1px;
+  width: 25px;
+  height: 17px;
   background-image: url("../../icons/sprite.svg#checkbox-center");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media (min-width: 768px) {
     left: -11px;
     top: -1px;
-    width: 38px;
+    width: 32px;
+    height: 22px;
+  }
+
+  @media (min-width: 1150px) {
+    top: -3px;
   }
 }
 

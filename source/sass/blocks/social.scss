@@ -19,8 +19,9 @@
   // position: absolute;
   display: block;
   background-image: url("../../icons/sprite.svg#insta");
-  // mask-repeat: no-repeat;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 22px;
   height: 21px;
 }
@@ -30,6 +31,8 @@
   display: block;
   background-image: url("../../icons/sprite.svg#fb");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 15px;
   height: 28px;
 }
@@ -39,6 +42,8 @@
   display: block;
   background-image: url("../../icons/sprite.svg#twitter-logo");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 23px;
   height: 20px;
 }
