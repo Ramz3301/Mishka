@@ -54,7 +54,8 @@
 .main-nav__link--cart::before {
   content: "";
   display: block;
-  background: url("../../icons/sprite.svg#sprite.svg#cart.svg");
+  background: url("../../icons/sprite.svg#cart");
+  background-repeat: no-repeat;
   width: 21px;
   height: 18px;
   position: absolute;
