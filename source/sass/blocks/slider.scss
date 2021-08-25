@@ -1,13 +1,12 @@
 .slider__toggles {
   @media (max-width: 767px) {
-    border: 1px solid #ececec;
+    border: 1px solid var(--brightgray);
   }
 }
 
 .slider__toggle {
   border: none;
   background-color: transparent;
-  // padding: 20px 35px;
   padding: 0;
   width: 126px;
   height: 50px;
@@ -15,6 +14,12 @@
 
   @media (min-width: 768px) {
     width: 50px;
+  }
+}
+
+.slider__toggle:first-child {
+  @media (max-width: 767px) {
+    border-right: 1px solid var(--brightgray);
   }
 }
 
