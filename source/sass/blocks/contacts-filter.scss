@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 35px;
+  position: relative;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -22,12 +23,55 @@
   border-bottom: 2px solid #000000;
   background-color: transparent;
 
+
   @media (min-width: 768px) {
     width: 500px;
   }
 
   @media (min-width: 1150px) {
     width: 700px;
+  }
+}
+
+.contacts-filter__item--phone::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/sprite.svg#phone");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 25px;
+  height: 24px;
+  bottom: 15px;
+  right: 0;
+
+  @media (min-width: 768px) {
+    right: 26px;
+  }
+
+  @media (min-width: 1150px) {
+    right: 8px;
+  }
+}
+
+.contacts-filter__item--mail::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/sprite.svg#mail");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 32px;
+  height: 21px;
+  bottom: 15px;
+  right: 0;
+
+  @media (min-width: 768px) {
+    right: 22px;
+  }
+
+  @media (min-width: 1150px) {
+    right: 4px;
   }
 }
 
