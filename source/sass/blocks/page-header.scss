@@ -100,6 +100,10 @@
   opacity: 0.6;
 }
 
+.page-header__link:active {
+  opacity: 0.3;
+}
+
 .page-header__desktop {
   display: none;
 
