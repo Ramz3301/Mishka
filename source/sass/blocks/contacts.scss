@@ -93,6 +93,11 @@
   border-bottom: 1px solid var(--lightgreen);
 }
 
+.contacts__mail:hover,
+.contacts__mail:active {
+  color: var(--darkgreen-hover);
+}
+
 .contacts__address {
   margin: 0;
   // margin-bottom: 62px;
