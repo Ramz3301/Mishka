@@ -168,10 +168,16 @@
   background-color: var(--lightgreen);
 }
 
-.product-of-the-type__link--luster:hover {
-  background-color: hsla(168, 60%, 59%, 1);
+.product-of-the-type__link--luster:hover,
+.product-of-the-type__link--luster:active {
+  background-color: var(--lightgreen-hover);
 }
 
 .product-of-the-type__link--toy {
   background-color: var(--darkgreen);
+}
+
+.product-of-the-type__link--toy:hover,
+.product-of-the-type__link--toy:active {
+  background-color: var(--darkgreen-hover);
 }
