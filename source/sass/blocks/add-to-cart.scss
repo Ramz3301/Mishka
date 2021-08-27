@@ -9,9 +9,11 @@
 
 .add-to-cart__caption {
   margin: 0;
+  font-size: 25px;
   line-height: 30px;
   padding-top: 29px;
-  margin-bottom: 14px;
+  margin-bottom: 21px;
+  text-transform: uppercase;
 
   @media (min-width: 768px) {
     font-size: 30px;
@@ -23,6 +25,8 @@
 
 .add-to-cart__select-size {
   margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 15px;
 
   @media (min-width: 768px) {
     margin-bottom: 20px;
@@ -40,8 +44,7 @@
 }
 
 .add-to-cart__item {
-  border: 2px solid var(--charcoal);
-  // opacity: 0.1;
+  border: 2px solid hsla(0, 0%, 27%, 0.1);;
   width: 50px;
   display: flex;
   justify-content: center;
