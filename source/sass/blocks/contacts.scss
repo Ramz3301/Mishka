@@ -93,9 +93,12 @@
   border-bottom: 1px solid var(--lightgreen);
 }
 
-.contacts__mail:hover,
-.contacts__mail:active {
+.contacts__mail:hover {
   color: var(--darkgreen-hover);
+}
+
+.contacts__mail:active {
+  border-color: hsla(171, 50%, 52%, 0.1);
 }
 
 .contacts__address {
