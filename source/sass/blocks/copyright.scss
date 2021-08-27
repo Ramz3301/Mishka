@@ -21,10 +21,11 @@
 .copyright__link::before {
   content: "";
   position: absolute;
-  background-image: url("../../icons/sprite.svg#copyright-logo");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  mask-image: url("../../icons/sprite.svg#copyright-logo");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+  background-color: var(--lightgreen);
   width: 27px;
   height: 35px;
   top: -10px;
@@ -34,4 +35,12 @@
     top: -8px;
     right: 0;
   }
+}
+
+.copyright__link:hover::before {
+  background-color: var(--darkgreen-hover);
+}
+
+.copyright__link:active::before {
+  opacity: 0.3;
 }

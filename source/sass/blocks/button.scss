@@ -19,3 +19,7 @@
   background-color: var(--charcoal);
   color: var(--white);
 }
+
+.button:active {
+  opacity: 0.3;
+}

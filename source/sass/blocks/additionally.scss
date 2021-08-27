@@ -30,6 +30,10 @@
   }
 }
 
+.additionally-area:visited {
+  border-color: var(--lightgreen);
+}
+
 .additionally__title {
   @media (min-width: 768px) {
     padding-top: 20px;

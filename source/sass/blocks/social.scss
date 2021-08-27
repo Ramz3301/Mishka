@@ -16,12 +16,14 @@
 
 .social__link--instagram {
   content: "";
-  // position: absolute;
   display: block;
-  background-image: url("../../icons/sprite.svg#insta");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  mask-image: url("../../icons/sprite.svg#insta");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+  background-color: var(--black);
+  // background-position: center;
+  // background-size: cover;
   width: 22px;
   height: 21px;
 }
@@ -29,10 +31,13 @@
 .social__link--facebook {
   content: "";
   display: block;
-  background-image: url("../../icons/sprite.svg#fb");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  mask-image: url("../../icons/sprite.svg#fb");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+  // background-position: center;
+  // background-size: cover;
+  background-color: var(--black);
   width: 15px;
   height: 28px;
 }
@@ -40,10 +45,13 @@
 .social__link--twitter {
   content: "";
   display: block;
-  background-image: url("../../icons/sprite.svg#twitter-logo");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  mask-image: url("../../icons/sprite.svg#twitter-logo");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+  background-color: var(--black);
+  // background-position: center;
+  // background-size: cover;
   width: 23px;
   height: 20px;
 }
