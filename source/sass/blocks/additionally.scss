@@ -30,8 +30,8 @@
   }
 }
 
-.additionally-area:visited {
-  border-color: var(--lightgreen);
+.additionally-area:focus {
+  outline-color: var(--lightgreen);
 }
 
 .additionally__title {
