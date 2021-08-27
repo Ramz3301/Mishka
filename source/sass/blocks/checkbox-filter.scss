@@ -89,6 +89,14 @@
   }
 }
 
+.checkbox-filter__label:hover::after {
+  border-color: var(--lightgreen-form);
+}
+
+.checkbox-filter__label:active::after {
+  border-color: hsla(0, 0%, 27%, 0.3);
+}
+
 .checkbox-filter__title {
   @media (min-width: 768px) {
     margin-left: 20px;

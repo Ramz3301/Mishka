@@ -44,7 +44,7 @@
 }
 
 .add-to-cart__item {
-  border: 2px solid hsla(0, 0%, 27%, 0.1);;
+  border: 2px solid hsla(0, 0%, 27%, 0.1);
   width: 50px;
   display: flex;
   justify-content: center;
@@ -54,6 +54,14 @@
   @media (min-width: 768px) {
     padding: 16px 54px;
   }
+}
+
+.add-to-cart__item:hover {
+  border-color: hsla(0, 0%, 27%, 0.3);
+}
+
+.add-to-cart__item:active {
+  border-color: var(--lightgreen-form);
 }
 
 .add-to-cart__item--active {
