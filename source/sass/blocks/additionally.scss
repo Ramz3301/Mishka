@@ -30,6 +30,10 @@
   }
 }
 
+.additionally-area:hover {
+  outline-color: var(--lightgreen);
+}
+
 .additionally-area:focus {
   outline-color: var(--lightgreen);
 }

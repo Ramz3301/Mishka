@@ -33,6 +33,10 @@
   }
 }
 
+.contacts-filter__input:hover {
+  box-shadow: inset 0 -2px 0 var(--lightgreen);
+}
+
 .contacts-filter__input:focus {
   outline: none;
   box-shadow: inset 0 -2px 0 var(--lightgreen);
@@ -62,10 +66,12 @@
 .contacts-filter__item--mail::before {
   content: "";
   position: absolute;
-  background-image: url("../../icons/sprite.svg#mail");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  mask-image: url("../../icons/sprite.svg#mail");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+  background-color: var(--black);
+  opacity: 0.2;
   width: 32px;
   height: 21px;
   bottom: 15px;
