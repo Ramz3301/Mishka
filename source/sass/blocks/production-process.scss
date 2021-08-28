@@ -40,6 +40,7 @@
 
   @media (min-width: 1150px) {
     padding-top: 96px;
+    padding-right: 77px;
     padding-left: 77px;
     margin-bottom: 21px;
   }
@@ -96,6 +97,8 @@
 .production-process__video {
   margin: 0;
   margin-bottom: 24px;
+  position: relative;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     grid-row: 1/2;
@@ -133,9 +136,35 @@
 }
 
 .production-process__picture {
+  z-index: -10;
+  // position: relative;
+
   @media (min-width: 768px) {
     width: auto;
     height: auto;
     display: block;
   }
+}
+
+.production-process__video::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/sprite.svg#play-video");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 102px;
+  height: 78px;
+  top: 41.3%;
+  left: 42.5%;
+  z-index: 100;
+}
+
+.production-process__video:hover::before {
+  transform: scale(1.2);
+}
+
+.production-process__video:active::before {
+  transform: scale(0.8);
+  opacity: 0.3;
 }
