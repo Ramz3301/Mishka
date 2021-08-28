@@ -14,7 +14,7 @@
     height: 334px;
     display: grid;
     grid-template-columns: 350px 320px;
-    grid-template-rows: 57px 1fr;
+    grid-template-rows: min-content 1fr;
     border-top: 1px solid var(--lightgrey);
   }
 
@@ -54,6 +54,7 @@
 
 .catalog__photo-position {
   order: -10;
+  grid-row: 3 span;
 }
 
 .catalog__size {
@@ -83,6 +84,7 @@
   @media (min-width: 768px) {
     grid-column: 2/3;
     font-size: 17px;
+    padding-bottom: 23px;
   }
 }
 
@@ -129,6 +131,7 @@
     line-height: 24px;
     padding-top: 28px;
     margin: 0;
+    margin-bottom: 6px;
   }
 
   @media (min-width: 1150px) {
@@ -181,5 +184,17 @@
 
 .catalog__price--cart:active::before {
   background-color: var(--lightgreen);
+  opacity: 0.3;
+}
+
+.catalog__link {
+  cursor: pointer;
+}
+
+.catalog__link:hover {
+  opacity: 0.6;
+}
+
+.catalog__link:active {
   opacity: 0.3;
 }

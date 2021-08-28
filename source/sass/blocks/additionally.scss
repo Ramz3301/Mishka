@@ -31,7 +31,8 @@
 }
 
 .additionally-area:hover {
-  outline-color: var(--lightgreen);
+  // outline-color: var(--lightgreen);
+  border-color: var(--lightgreen);
 }
 
 .additionally-area:focus {
