@@ -59,6 +59,14 @@
   }
 }
 
+.page-header__img:hover {
+  opacity: 0.6;
+}
+
+.page-header__img:active {
+  opacity: 0.3;
+}
+
 .page-header__list {
   list-style: none;
   line-height: 24px;
