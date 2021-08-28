@@ -46,34 +46,11 @@
   border-bottom: 2px solid var(--lightgreen);
 }
 
-.contacts-filter__input:hover + .contacts-filter__item--phone::before {
+.contacts-filter__input + .contacts-filter__item--phone:hover::before {
   background-color: var(--lightgreen);
 }
 
-.contacts-filter__item--phone::before {
-  content: "";
-  position: absolute;
-  mask-image: url("../../icons/sprite.svg#phone");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: cover;
-  background-color: var(--black);
-  opacity: 0.2;
-  width: 25px;
-  height: 24px;
-  bottom: 15px;
-  right: 0;
-
-  @media (min-width: 768px) {
-    right: 26px;
-  }
-
-  @media (min-width: 1150px) {
-    right: 8px;
-  }
-}
-
-.contacts-filter__item--mail::before {
+.contacts-filter__pseudo--mail::before {
   content: "";
   position: absolute;
   mask-image: url("../../icons/sprite.svg#mail");
@@ -110,4 +87,39 @@
   @media (min-width: 1150px) {
     margin-right: 50px;
   }
+}
+
+.contacts-filter__pseudo--phone::before {
+  content: "";
+  position: absolute;
+  mask-image: url("../../icons/sprite.svg#phone");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+  background-color: var(--black);
+  opacity: 0.2;
+  width: 25px;
+  height: 24px;
+  bottom: 15px;
+  right: 0;
+
+  @media (min-width: 768px) {
+    right: 26px;
+  }
+
+  @media (min-width: 1150px) {
+    right: 8px;
+  }
+}
+
+.contacts-filter__input:hover ~ .contacts-filter__pseudo--phone::before,
+.contacts-filter__input:focus ~ .contacts-filter__pseudo--phone::before {
+  background-color: var(--lightgreen-form);
+  opacity: 1;
+}
+
+.contacts-filter__input:hover ~ .contacts-filter__pseudo--mail::before,
+.contacts-filter__input:focus ~ .contacts-filter__pseudo--mail::before {
+  background-color: var(--lightgreen-form);
+  opacity: 1;
 }
