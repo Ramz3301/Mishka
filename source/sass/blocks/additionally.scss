@@ -13,13 +13,14 @@
 }
 
 .additionally-area {
+  font-family: inherit;
   resize: none;
   border: 2px solid var(--charcoal);
   width: 260px;
   height: 142px;
   font-size: 17px;
   line-height: 18px;
-  padding: 15px 17px;
+  padding: 16px 15px;
 
   @media (min-width: 768px) {
     width: 501px;

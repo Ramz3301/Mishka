@@ -1,6 +1,6 @@
 .fieldset {
   border: none;
-  border-top: 1px solid var(--lightgreen);
+  // border-top: 1px solid var(--lightgreen);
   padding: 0;
 
   @media (min-width: 768px) {
@@ -19,7 +19,7 @@
   line-height: 16px;
   color: var(--lightgreen);
   padding: 0;
-  padding-right: 21px;
+  // padding-right: 21px;
   text-transform: uppercase;
 
   @media (min-width: 768px) {
@@ -32,5 +32,29 @@
 .fieldset--background-color {
   @media (min-width: 768px) {
     background-color: var(--lightgrey);
+  }
+}
+
+.fieldset__line {
+  @media (max-width: 767px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    width: 260px;
+  }
+}
+
+.fieldset__line::before {
+  @media (max-width: 767px) {
+    content: "";
+    order: 2;
+    flex-grow: 1;
+    width: 180px;
+    height: 1px;
+    background-color: var(--lightgreen-form);
+    // top: 50%;
+    // transform: translateY(-100%);
+    // left: 60px;
   }
 }

@@ -1,5 +1,5 @@
 .name-filter {
-  padding-bottom: 13px;
+  padding-bottom: 11px;
 
   @media (min-width: 768px) {
     padding-top: 67px;
@@ -10,7 +10,7 @@
 .name-filter__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -23,7 +23,12 @@
   border: none;
   border-bottom: 2px solid var(--black);
   flex-grow: 1;
-  // box-shadow: inset 0 -2px 0 var(--black);
+  font-size: 17px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 15px;
+  font-family: inherit;
 
   @media (min-width: 768px) {
     width: 370px;
@@ -36,12 +41,10 @@
 
 .name-filter__input:focus {
   outline: none;
-  // box-shadow: inset 0 -2px 0 var(--lightgreen);
   border-bottom: 2px solid var(--lightgreen);
 }
 
 .name-filter__input:hover {
-  // box-shadow: inset 0 -2px 0 var(--lightgreen);
   border-bottom: 2px solid var(--lightgreen);
 }
 
@@ -54,7 +57,7 @@
 }
 
 .name-filter__label {
-  margin-bottom: 34px;
+  margin-bottom: 16px;
 
   @media (min-width: 768px) {
     margin-bottom: 16px;
