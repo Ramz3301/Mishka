@@ -26,7 +26,7 @@
 .production-process__title {
   position: relative;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   font-size: 17px;
   line-height: 24px;
   padding-left: 91px;
@@ -155,9 +155,14 @@
   background-size: cover;
   width: 102px;
   height: 78px;
-  top: 41.3%;
-  left: 42.5%;
+  top: 22%;
+  left: 30%;
   z-index: 100;
+
+  @media (min-width: 768px) {
+    top: 41.3%;
+    left: 42.5%;
+  }
 }
 
 .production-process__video:hover::before {

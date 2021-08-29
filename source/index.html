@@ -123,6 +123,33 @@
             </p>
             <p class="product-of-the-week__price">Цена: 990 руб.</p>
             <a class="product-of-the-week__button button" href="#">Заказать</a>
+            <section class="modal modal__show">
+              <div class="modal__wrapper">
+                <form class="add-to-cart">
+                  <h2 class="add-to-cart__caption">
+                    Добавить в&nbsp;корзину
+                  </h2>
+                  <fieldset class="add-to-cart__fieldset">
+                    <legend class="add-to-cart__select-size">Выберите размер:</legend>
+                    <ul class="add-to-cart__list">
+                      <li class="add-to-cart__item add-to-cart__item--active">
+                        <input class="add-to-cart__size add-to-cart__size--active page__ally-hidden" id="s-size" type="radio" name="size" value="s" checked>
+                        <label for="s-size">S</label>
+                      </li>
+                      <li class="add-to-cart__item">
+                        <input class="add-to-cart__size page__ally-hidden" id="m-size" type="radio" name="size" value="m">
+                        <label for="m-size">M</label>
+                      </li>
+                      <li class="add-to-cart__item">
+                        <input class="add-to-cart__size page__ally-hidden" id="l-size" type="radio" name="size" value="l">
+                        <label for="l-size">L</label>
+                      </li>
+                    </ul>
+                    <button class="add-to-cart__add" type="submit">Добавить</button>
+                  </fieldset>
+                </form>
+              </div>
+            </section>
           </div>
         </section>
       </div>
@@ -153,54 +180,55 @@
           </div>
         </section>
       </div>
-      <div class="page__leveler">
+      <div class="page__leveler page__leveler--tablet-on">
         <section class="reviews">
-          <!-- <div class="page__leveler"> -->
-          <div class="reviews__wrapper slider">
-            <h2 class="reviews__title title">Отзывы</h2>
-            <div class="reviews__list slider__list">
-              <blockquote class="reviews__item slider__item">
-                <div class="reviews__author-info">
-                  <p class="reviews__text">
-                    Я молодая мама, но всё равно фотографии не набирали и близко
-                    такого количества лайков, как у популярных инстамамочек. В
-                    отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-                    фотографии сразу стали более стильными, а также набирают
-                    больше лайков!
-                  </p>
-                  <cite class="reviews__author-name">Анастасия Красильникова<br><span class="reviews__author-id">@misssssiskras</span></cite>
-                </div>
-              </blockquote>
-              <blockquote class="reviews__item slider__item page__ally-hidden">
-                <div class="reviews__author-info">
-                  <p class="reviews__text">
-                    Я молодой папа, но всё равно фотографии не набирали и близко
-                    такого количества лайков, как у популярных инстапапочек. В
-                    отчаянии, я накупил аксессуаров и игрушек в Мишке, и мои
-                    фотографии сразу стали более стильными, а также набирают
-                    больше лайков!
-                  </p>
-                  <cite class="reviews__author-name">Александр Красильников<br>@misssssterkras</cite>
-                </div>
-              </blockquote>
-              <blockquote class="reviews__item slider__item page__ally-hidden">
-                <div class="reviews__author-info">
-                  <p class="reviews__text">
-                    Я молодая бабушка, но всё равно фотографии не набирали и близко
-                    такого количества лайков, как у популярных инстабабушек. В
-                    отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-                    фотографии сразу стали более стильными, а также набирают
-                    больше лайков!
-                  </p>
-                  <cite class="reviews__author-name">Екатерина Красильникова<br>@grand_misssssiskras</cite>
-                </div>
-              </blockquote>
+          <div class="page__leveler">
+            <div class="reviews__wrapper slider">
+              <h2 class="reviews__title title">Отзывы</h2>
+              <div class="reviews__list slider__list">
+                <blockquote class="reviews__item slider__item">
+                  <div class="reviews__author-info">
+                    <p class="reviews__text">
+                      Я молодая мама, но всё равно фотографии не набирали и близко
+                      такого количества лайков, как у популярных инстамамочек. В
+                      отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                      фотографии сразу стали более стильными, а также набирают
+                      больше лайков!
+                    </p>
+                    <cite class="reviews__author-name">Анастасия Красильникова<br><span class="reviews__author-id">@misssssiskras</span></cite>
+                  </div>
+                </blockquote>
+                <blockquote class="reviews__item slider__item page__ally-hidden">
+                  <div class="reviews__author-info">
+                    <p class="reviews__text">
+                      Я молодой папа, но всё равно фотографии не набирали и близко
+                      такого количества лайков, как у популярных инстапапочек. В
+                      отчаянии, я накупил аксессуаров и игрушек в Мишке, и мои
+                      фотографии сразу стали более стильными, а также набирают
+                      больше лайков!
+                    </p>
+                    <cite class="reviews__author-name">Александр Красильников<br>@misssssterkras</cite>
+                  </div>
+                </blockquote>
+                <blockquote class="reviews__item slider__item page__ally-hidden">
+                  <div class="reviews__author-info">
+                    <p class="reviews__text">
+                      Я молодая бабушка, но всё равно фотографии не набирали и близко
+                      такого количества лайков, как у популярных инстабабушек. В
+                      отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                      фотографии сразу стали более стильными, а также набирают
+                      больше лайков!
+                    </p>
+                    <cite class="reviews__author-name">Екатерина Красильникова<br>@grand_misssssiskras</cite>
+                  </div>
+                </blockquote>
+              </div>
+              <p class="reviews__toggles slider__toggles">
+                <button class="slider__toggle slider__toggle--left" type="button"><span class="page__ally-hidden">Назад</span></button>
+                <button class="slider__toggle slider__toggle--right" type="button"><span class="page__ally-hidden">Вперед</span></button>
+              </p>
+              <button class="reviews__button button" type="button">Написать</button>
             </div>
-            <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--left" type="button"><span class="page__ally-hidden">Назад</span></button>
-              <button class="slider__toggle slider__toggle--right" type="button"><span class="page__ally-hidden">Вперед</span></button>
-            </p>
-            <button class="reviews__button button" type="button">Написать</button>
           </div>
         </section>
       </div>
@@ -230,8 +258,8 @@
               </dl>
             </div>
           </div>
-          <div class="contacts__map"></div>
-          <!-- <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2376.764514861473!2d30.322288215135913!3d59.93856759552723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1630149485280!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe></div> -->
+          <!-- <div class="contacts__map"></div> -->
+          <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2376.764514861473!2d30.322288215135913!3d59.93856759552723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1630149485280!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe></div>
           <button class="contacts__button button">Напишите нам</button>
         </section>
       </div>
@@ -261,7 +289,7 @@
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link page-footer__link social__link--twitter">
+                <a class="social__link page-footer__link social__link--twitter" href="#">
                   <span class="page__ally-hidden">
                     Мы в Твиттер
                   </span>
@@ -277,7 +305,7 @@
         </div>
       </div>
     </footer>
-    <section class="modal">
+    <!-- <section class="modal modal__show">
       <div class="modal__wrapper">
         <form class="add-to-cart">
           <h2 class="add-to-cart__caption">
@@ -303,7 +331,7 @@
           </fieldset>
         </form>
       </div>
-    </section>
+    </section> -->
     <script src="js/script.min.js">
     </script>
   </body>

@@ -75,17 +75,18 @@
 
 .contacts-filter__label {
   color: var(--lightgreen);
+  font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   margin-bottom: 37px;
 
   @media (min-width: 768px) {
-    margin-right: 100px;
+    margin-right: 109px;
     margin-bottom: 19px;
   }
 
   @media (min-width: 1150px) {
-    margin-right: 50px;
+    margin-right: 56px;
   }
 }
 
