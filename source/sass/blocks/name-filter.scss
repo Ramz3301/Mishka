@@ -2,8 +2,8 @@
   padding-bottom: 11px;
 
   @media (min-width: 768px) {
-    padding-top: 67px;
-    padding-bottom: 9px;
+    padding-top: 62px;
+    padding-bottom: 14px;
   }
 }
 
@@ -14,7 +14,8 @@
 
   @media (min-width: 768px) {
     flex-direction: row;
-    margin-bottom: 42px;
+    align-items: baseline;
+    margin-bottom: 36px;
   }
 }
 
@@ -31,7 +32,10 @@
   font-family: inherit;
 
   @media (min-width: 768px) {
-    width: 370px;
+    font-size: 19px;
+    width: 374px;
+    padding-bottom: 12px;
+    padding-left: 16px;
   }
 
   @media (min-width: 1150px) {

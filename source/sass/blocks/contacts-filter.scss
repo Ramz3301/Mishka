@@ -1,7 +1,7 @@
 .contacts-filter {
   @media (min-width: 768px) {
-    padding-top: 67px;
-    padding-bottom: 5px;
+    padding-top: 60px;
+    padding-bottom: 12px;
   }
 }
 
@@ -14,7 +14,8 @@
 
   @media (min-width: 768px) {
     flex-direction: row;
-    margin-bottom: 43px;
+    margin-bottom: 36px;
+    align-items: baseline;
   }
 }
 
@@ -32,7 +33,10 @@
 
 
   @media (min-width: 768px) {
+    font-size: 19px;
     width: 500px;
+    padding-bottom: 14px;
+    padding-left: 17px;
   }
 
   @media (min-width: 1150px) {
@@ -64,11 +68,12 @@
   opacity: 0.2;
   width: 32px;
   height: 21px;
-  bottom: 14px;
   right: 3px;
+  bottom: 14px;
 
   @media (min-width: 768px) {
-    right: 22px;
+    right: 21px;
+    bottom: 17px;
   }
 
   @media (min-width: 1150px) {

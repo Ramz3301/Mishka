@@ -6,6 +6,7 @@
   @media (min-width: 768px) {
     display: flex;
     border: none;
+    align-items: baseline;
   }
 
   @media (min-width: 1150px) {
@@ -40,7 +41,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 22px;
     width: 260px;
   }
 }
