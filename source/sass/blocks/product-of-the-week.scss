@@ -125,7 +125,7 @@
   line-height: 20px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 21px;
   display: flex;
   flex-wrap: wrap;
 
@@ -152,10 +152,6 @@
   @media (min-width: 768px) {
     grid-column: 1/2;
   }
-}
-
-.product-of-the-week__term:last-of-type {
-  margin-bottom: 0;
 }
 
 .product-of-the-week__term::before {
@@ -192,7 +188,7 @@
   line-height: 24px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   color: var(--charcoal);
 
   @media (min-width: 768px) {
@@ -221,7 +217,7 @@
 }
 
 .product-of-the-week__photo {
-  margin-top: 28px;
+  // margin-top: 28px;
   margin-bottom: 18px;
 
   @media (min-width: 768px) {
