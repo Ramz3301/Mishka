@@ -56,7 +56,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    right: 2px;
+    right: 3px;
     bottom: -8px;
   }
 
@@ -91,6 +91,7 @@
   color: var(--charcoal);
   text-decoration: none;
   border-bottom: 1px solid var(--lightgreen);
+  padding-bottom: 3px;
 }
 
 .contacts__mail:hover {
@@ -144,7 +145,7 @@
   width: 100%;
 
   @media (min-width: 768px) {
-    margin-bottom: 56px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: 1150px) {
