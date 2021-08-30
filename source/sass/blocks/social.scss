@@ -1,4 +1,5 @@
 .social__list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -11,6 +12,17 @@
 
   @media (min-width: 768px) {
     margin: 0;
+  }
+}
+
+.social__list::before {
+  @media (max-width: 767px) {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 1px;
+    background-color: var(--footer-gray);
+    bottom: -30px;
   }
 }
 
