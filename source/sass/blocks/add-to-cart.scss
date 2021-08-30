@@ -40,6 +40,10 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 18px;
+  }
 }
 
 .add-to-cart__list {
