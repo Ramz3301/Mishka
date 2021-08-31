@@ -17,7 +17,7 @@
   }
 }
 
-.menu-list__item--desktop:not(:last-child)::before {
+.menu-list__item--desktop:first-child::before {
   @media (min-width: 1150px) {
     content: "";
     position: absolute;
