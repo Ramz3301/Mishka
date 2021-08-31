@@ -3,8 +3,8 @@
   background-repeat: no-repeat;
   width: 320px;
   background-position: 50% 0;
-  background-size: cover;
-  // background-size: 540px;
+  // background-size: cover;
+  background-size: 575px 373px;
   margin: 0 auto;
   // z-index: -100;
 
@@ -17,7 +17,8 @@
   }
 
   @media (min-width: 1150px) {
-    background-position: 50% 30%;
+    // background-position: 50% 30%;
+    background-size: 1150px 746px;
   }
 
   @media (min-resolution: 2dppx) {
