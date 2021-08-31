@@ -1,17 +1,19 @@
 .modal {
   position: absolute;
-  top: 478px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%, -50%);
   background-color: var(--white);
-  z-index: 10;
+  z-index: 100;
 
   @media (min-width: 768px) {
-    top: 694px;
-    left: 51px;
+    // top: 694px;
+    // left: 51px;
   }
 
   @media (min-width: 1150px) {
-    top: 279px;
-    left: 242px;
+    // top: 279px;
+    // left: 242px;
   }
 }
 

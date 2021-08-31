@@ -7,6 +7,7 @@
   }
 
   @media (min-width: 768px) {
+    position: relative;
     display: grid;
     grid-template-columns: 320px 84px 318px;
     grid-template-rows: 67px 64px;
@@ -19,6 +20,25 @@
     grid-template-rows: 88px 64px;
     align-items: center;
     height: 88px;
+  }
+}
+
+.page-header::before {
+  @media (min-width: 768px) {
+    content: "";
+    position: absolute;
+    width: 768px;
+    // width: 100vw;
+    height: 1px;
+    background-color: var(--black);
+    opacity: 0.1;
+    bottom: -1px;
+    left: -50px;
+    z-index: 10;
+  }
+
+  @media (min-width: 1150px) {
+    width: 1150px;
   }
 }
 

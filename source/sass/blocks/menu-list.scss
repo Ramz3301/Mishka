@@ -13,5 +13,19 @@
 .menu-list__item--desktop {
   @media (min-width: 1150px) {
     padding-bottom: 18px;
+    position: relative;
+  }
+}
+
+.menu-list__item--desktop:not(:last-child)::before {
+  @media (min-width: 1150px) {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 88px;
+    background-color: var(--black);
+    opacity: 0.1;
+    top: -32px;
+    right: -1px;
   }
 }
