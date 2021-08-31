@@ -19,7 +19,7 @@
   @media (min-width: 768px) {
     min-height: 334px;
     display: grid;
-    grid-template-columns: 350px 320px;
+    grid-template-columns: 333px 333px;
     grid-template-rows: min-content 1fr;
     border-top: 1px solid var(--lightgrey);
   }
@@ -45,7 +45,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 31px;
 
   @media (min-width: 768px) {
     row-gap: 52px;
@@ -94,16 +94,19 @@
   margin: 0;
   padding-top: 22px;
   padding-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: 768px) {
     grid-column: 2/3;
     font-size: 17px;
-    padding-bottom: 23px;
+    padding-bottom: 25px;
     padding-top: 25px;
   }
 
   @media (min-width: 1150px) {
     margin-top: auto;
+    padding-bottom: 22px;
   }
 }
 
@@ -162,19 +165,36 @@
 .catalog__size,
 .catalog__title {
   padding-left: 28px;
+  padding-right: 27px;
 
   @media (min-width: 768px) {
-    padding-left: 16px;
+    padding-left: 33px;
+    padding-right: 31px;
   }
 
   @media (min-width: 1150px) {
     padding-left: 27px;
-    padding-right: 27px;
+    padding-right: 32px;
   }
 }
 
-.catalog__price--cart::before {
+.catalog__price--sum {
+  margin: 0;
+}
+
+.catalog__price--cart {
+  margin: 0;
+}
+
+.catalog__price--link {
+  position: relative;
+  width: 20px;
+  height: 19px;
+}
+
+.catalog__price--link::before {
   content: "";
+  position: absolute;
   mask-image: url("../../icons/sprite.svg#cart");
   mask-repeat: no-repeat;
   mask-position: center;
@@ -183,26 +203,25 @@
   opacity: 0.2;
   width: 21px;
   height: 18px;
-  position: absolute;
-  right: 27px;
+  right: 0;
   cursor: pointer;
 
   @media (min-width: 768px) {
-    right: 35px;
+    right: 0;
   }
 
   @media (min-width: 1150px) {
-    top: 26px;
-    right: 32px;
+    // top: 26px;
+    right: 0;
   }
 }
 
-.catalog__price--cart:hover::before {
+.catalog__price--link:hover::before {
   background-color: var(--lightgreen);
   opacity: 1;
 }
 
-.catalog__price--cart:active::before {
+.catalog__price--link:active::before {
   background-color: var(--lightgreen);
   opacity: 0.3;
 }

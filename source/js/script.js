@@ -18,5 +18,13 @@ const orderForm = document.querySelector('.modal');
 
   orderButton.addEventListener('click', function (evt) {
     evt.preventDefault();
-    orderForm.classList.toggle('modal__show');
+    orderForm.classList.toggle('modal-show');
+  });
+
+const orderCart = document.querySelector('.catalog__price--link');
+
+
+  orderCart.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    orderForm.classList.toggle('modal-show');
   });

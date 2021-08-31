@@ -34,20 +34,20 @@
   }
 }
 
-.page-footer__logo::before {
-  content: "";
-  position: absolute;
-  width: 102px;
-  height: 35px;
-  background-image: url("../../img/sprite.svg#logotype");
-  // background-color: var(--black);
-  // top: 0;
-  // left: 0;
-}
+// .page-footer__logo::before {
+//   content: "";
+//   position: absolute;
+//   width: 102px;
+//   height: 35px;
+//   background-image: url("../../img/sprite.svg#logotype");
+//   // background-color: var(--black);
+//   // top: 0;
+//   // left: 0;
+// }
 
-.page-footer__logo:hover::before {
-  background-color: var(--darkgreen-hover);
-}
+// .page-footer__logo:hover::before {
+//   background-color: var(--darkgreen-hover);
+// }
 
 .page-footer__link:hover {
   background-color: var(--darkgreen-hover);

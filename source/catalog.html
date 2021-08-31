@@ -92,9 +92,12 @@
                     </picture>
                   </div>
                   <p class="catalog__size">Рост 30 см, вес 200 г</p>
-                  <p class="catalog__price catalog__price--cart">
-                    1 200 руб.
-                  </p>
+                  <div class="catalog__price">
+                    <p class="catalog__price--sum">
+                      1 200 руб.
+                    </p>
+                    <a class="catalog__price--link"></a>
+                  </div>
                 </div>
               </li>
               <li class="catalog__item">
@@ -115,9 +118,12 @@
                     </picture>
                   </div>
                   <p class="catalog__size">Диаметр 15 см, высота 10 см</p>
-                  <p class="catalog__price catalog__price--cart">
-                    690 руб.
-                  </p>
+                  <div class="catalog__price">
+                    <p class="catalog__price--sum">
+                      690 руб.
+                    </p>
+                    <a class="catalog__price--link"></a>
+                  </div>
                 </div>
               </li>
               <li class="catalog__item">
@@ -138,9 +144,12 @@
                     </picture>
                   </div>
                   <p class="catalog__size">Диаметр 30 см, высота 30 см</p>
-                  <p class="catalog__price catalog__price--cart">
-                    1 500 руб.
-                  </p>
+                  <div class="catalog__price">
+                    <p class="catalog__price--sum">
+                      1 500 руб.
+                    </p>
+                    <a class="catalog__price--link"></a>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -172,9 +181,11 @@
     <footer class="page-footer">
       <div class="page__leveler">
         <div class="page-footer__wrapper">
-          <a class="page-footer__logo" href="index.html">
-            <!-- <img src="img/sprite.svg#logotype" width="102" height="34" alt="Логотип мишка"> -->
-          </a>
+          <div>
+            <!-- <a class="page-footer__logo" href="index.html"> -->
+              <img src="img/sprite.svg#logotype" width="102" height="34" alt="Логотип мишка">
+            <!-- </a> -->
+          </div>
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
@@ -208,23 +219,25 @@
         </div>
       </div>
     </footer>
-    <section class="modal page__ally-hidden">
-      <div class="modal__wrapper">
+    <!-- <section class="modal page__modal-fixed"> -->
+      <div class="modal page__modal-fixed">
         <form class="add-to-cart">
-          <h2>Добавить <br>в корзину</h2>
+          <h2 class="add-to-cart__caption">
+            Добавить в&nbsp;корзину
+          </h2>
           <fieldset class="add-to-cart__fieldset">
             <legend class="add-to-cart__select-size">Выберите размер:</legend>
             <ul class="add-to-cart__list">
-              <li class="add-to-cart__item">
-                <input class="add-to-cart__size add-to-cart__size--active" id="s-size" type="radio" name="size" value="s" checked>
+              <li class="add-to-cart__item add-to-cart__item--active">
+                <input class="add-to-cart__size add-to-cart__size--active page__ally-hidden" id="s-size" type="radio" name="size" value="s" checked>
                 <label for="s-size">S</label>
               </li>
               <li class="add-to-cart__item">
-                <input class="add-to-cart__size" id="m-size" type="radio" name="size" value="m">
+                <input class="add-to-cart__size page__ally-hidden" id="m-size" type="radio" name="size" value="m">
                 <label for="m-size">M</label>
               </li>
               <li class="add-to-cart__item">
-                <input class="add-to-cart__size" id="l-size" type="radio" name="size" value="l">
+                <input class="add-to-cart__size page__ally-hidden" id="l-size" type="radio" name="size" value="l">
                 <label for="l-size">L</label>
               </li>
             </ul>
@@ -232,7 +245,7 @@
           </fieldset>
         </form>
       </div>
-    </section>
+    <!-- </section> -->
     <script src="js/script.min.js">
     </script>
   </body>
