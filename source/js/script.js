@@ -1,6 +1,8 @@
 let pageHeader = document.querySelector(".page-header");
 let headerToggle = document.querySelector(".page-header__toggle");
 
+pageHeader.classList.remove("page-header--nojs");
+
 headerToggle.addEventListener("click", function() {
   if (pageHeader.classList.contains("page-header--closed")) {
     pageHeader.classList.remove("page-header--closed");
