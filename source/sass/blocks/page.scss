@@ -44,6 +44,12 @@
       display: contents;
     }
   }
+
+  &--desktop-on {
+    @media (min-width: 1150px) {
+      display: contents;
+    }
+  }
 }
 
 .page__vertical-leveler {

@@ -23,20 +23,6 @@
   }
 }
 
-.contacts__wrapper {
-  &--on {
-    @media (max-width: 1150px - 0.05px) {
-      display: contents;
-    }
-  }
-
-  &--off {
-    @media (min-width: 1150px) {
-      display: contents;
-    }
-  }
-}
-
 .contacts__title {
   font-size: 25px;
   margin: 0;
