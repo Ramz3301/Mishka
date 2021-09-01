@@ -53,11 +53,7 @@
   border-bottom: 2px solid var(--lightgreen);
 }
 
-.contacts-filter__input + .contacts-filter__item--phone:hover::before {
-  background-color: var(--lightgreen);
-}
-
-.contacts-filter__pseudo--mail::before {
+.contacts-filter__mail::before {
   content: "";
   position: absolute;
   mask-image: url("../../icons/sprite.svg#mail");
@@ -98,7 +94,7 @@
   }
 }
 
-.contacts-filter__pseudo--phone::before {
+.contacts-filter__phone::before {
   content: "";
   position: absolute;
   mask-image: url("../../icons/sprite.svg#phone");
@@ -121,14 +117,14 @@
   }
 }
 
-.contacts-filter__input:hover ~ .contacts-filter__pseudo--phone::before,
-.contacts-filter__input:focus ~ .contacts-filter__pseudo--phone::before {
+.contacts-filter__input:hover ~ .contacts-filter__phone::before,
+.contacts-filter__input:focus ~ .contacts-filter__phone::before {
   background-color: var(--lightgreen-form);
   opacity: 1;
 }
 
-.contacts-filter__input:hover ~ .contacts-filter__pseudo--mail::before,
-.contacts-filter__input:focus ~ .contacts-filter__pseudo--mail::before {
+.contacts-filter__input:hover ~ .contacts-filter__mail::before,
+.contacts-filter__input:focus ~ .contacts-filter__mail::before {
   background-color: var(--lightgreen-form);
   opacity: 1;
 }
