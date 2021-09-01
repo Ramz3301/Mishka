@@ -10,3 +10,9 @@
     font-size: 19px;
   }
 }
+
+.page-form__fieldset--background-color {
+  @media (min-width: 768px) {
+    background-color: var(--lightgrey);
+  }
+}

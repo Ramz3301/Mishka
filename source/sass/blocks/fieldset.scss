@@ -29,13 +29,6 @@
   }
 }
 
-
-.fieldset--background-color {
-  @media (min-width: 768px) {
-    background-color: var(--lightgrey);
-  }
-}
-
 .fieldset__line {
   @media (max-width: 767px) {
     position: relative;
