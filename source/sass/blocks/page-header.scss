@@ -224,9 +224,15 @@
   }
 }
 
+.page-header--opened .page-header__item {
+  @media (max-width: 768px) {
+    // display: block;
+  }
+}
+
 .page-header--closed .page-header__item {
   @media (max-width: 768px - 0.05px) {
-    // display: none;
+    display: none;
   }
 }
 
