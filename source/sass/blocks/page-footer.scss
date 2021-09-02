@@ -10,7 +10,7 @@
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    padding-top: 53px;
+    padding-top: 52px;
     padding-bottom: 58px;
   }
 }
@@ -36,7 +36,7 @@
 
 .page-footer__logo::before {
   content: "";
-  position: absolute;
+  display: block;
   width: 102px;
   height: 35px;
   mask-image: url("../../img/sprite.svg#logotype");
