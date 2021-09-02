@@ -14,19 +14,21 @@
   <body class="page__body">
     <div class="page__leveler page__leveler--mobile-off ">
       <header class="page-header page-header--closed page-header--nojs">
-        <a class="page-header__logo">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/sprite.svg#desktop">
-            <source media="(min-width: 768px)" srcset="img/sprite.svg#tablet">
-            <img
-              class="page-header__img"
-              src="img/sprite.svg#mobile"
-              width="86"
-              height="35"
-              alt="Логотип магазина для дома Mishka"
-            >
-          </picture>
-        </a>
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/sprite.svg#desktop">
+              <source media="(min-width: 768px)" srcset="img/sprite.svg#tablet">
+              <img
+                class="page-header__img"
+                src="img/sprite.svg#mobile"
+                width="86"
+                height="35"
+                alt="Логотип магазина для дома Mishka"
+              >
+            </picture>
+          </a>
+        </div>
         <button class="page-header__toggle" type="button">
           <span class="page__ally-hidden">Открыть меню</span>
         </button>

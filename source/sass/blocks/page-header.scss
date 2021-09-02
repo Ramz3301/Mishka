@@ -1,16 +1,9 @@
 .page-header {
   padding-top: 22px;
-  // padding-right: ;
-  // padding-bottom: 22px;
-  // padding-left: ;
   min-height: 79px;
-
-  @media (max-width: 767px) {
-    position: relative;
-  }
+  position: relative;
 
   @media (min-width: 768px) {
-    position: relative;
     display: grid;
     grid-template-columns: 320px 84px 318px;
     grid-template-rows: 67px 64px;
@@ -45,7 +38,11 @@
 }
 
 .page-header__logo {
-  @media (max-width: 768px - 0.05px) {
+  display: block;
+  width: 86px;
+  height: 35px;
+
+  @media (max-width: 767px) {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -53,13 +50,19 @@
 
   @media (min-width: 768px) {
     text-align: start;
+    width: 113px;
+    height: 46px;
   }
 
   @media (min-width: 1150px) {
     grid-column: 3/4;
     text-align: center;
     padding-top: 10px;
-    padding-right: 31px;
+    width: 149px;
+    height: 72px;
+    align-self: start;
+    justify-self: center;
+    margin-right: 30px;
   }
 }
 
@@ -69,11 +72,12 @@
 
   @media (min-width: 768px) {
     width: 113px;
-    height: auto;
+    height: 46px;
   }
 
   @media (min-width: 1150px) {
-    width: 179px;
+    width: 149px;
+    height: 72px;
   }
 }
 
@@ -264,6 +268,12 @@
   left: 0;
   right: 0;
 
+  @media (min-width: 768px) {
+    display: contents;
+  }
+}
+
+.page-header__logo-wrapper {
   @media (min-width: 768px) {
     display: contents;
   }
