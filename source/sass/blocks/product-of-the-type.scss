@@ -175,6 +175,7 @@
 .product-of-the-type__link--luster:hover,
 .product-of-the-type__link--luster:active {
   background-color: var(--lightgreen-hover);
+  box-shadow: 0 5px 0 0 var(--lightgreen-hover);
 }
 
 .product-of-the-type__link--toy {
@@ -184,6 +185,7 @@
 .product-of-the-type__link--toy:hover,
 .product-of-the-type__link--toy:active {
   background-color: var(--darkgreen-hover);
+  box-shadow: 0 5px 0 0 var(--darkgreen-hover);
 }
 
 .product-of-the-type__link:hover::before {
