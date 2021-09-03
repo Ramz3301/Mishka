@@ -12,7 +12,7 @@
   }
 }
 
-.additionally-area {
+.additionally__area {
   font-family: inherit;
   resize: none;
   border: 2px solid var(--charcoal);
@@ -32,12 +32,11 @@
   }
 }
 
-.additionally-area:hover {
-  // outline-color: var(--lightgreen);
+.additionally__area:hover {
   border-color: var(--lightgreen);
 }
 
-.additionally-area:focus {
+.additionally__area:focus {
   outline-color: var(--lightgreen);
   border-radius: 0;
 }
