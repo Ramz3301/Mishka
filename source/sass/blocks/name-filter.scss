@@ -20,16 +20,16 @@
 }
 
 .name-filter__input {
+  font-size: 17px;
+  line-height: 49px;
+  font-family: inherit;
   order: 2;
   border: none;
   border-bottom: 2px solid var(--black);
   flex-grow: 1;
-  font-size: 17px;
-  line-height: 18px;
   padding: 0;
   margin: 0;
-  padding-bottom: 15px;
-  font-family: inherit;
+  // padding-bottom: 15px;
 
   @media (min-width: 768px) {
     font-size: 19px;
@@ -54,7 +54,7 @@
 }
 
 .name-filter__list {
-  padding-top: 30px;
+  padding-top: 29px;
 
   @media (min-width: 768px) {
     padding: 0;
@@ -62,7 +62,7 @@
 }
 
 .name-filter__label {
-  margin-bottom: 16px;
+  margin-bottom: 0;
 
   @media (min-width: 768px) {
     margin-bottom: 16px;
