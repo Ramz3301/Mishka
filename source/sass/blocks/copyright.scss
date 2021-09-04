@@ -3,6 +3,10 @@
   line-height: 18px;
   margin: 0;
   margin-right: 55px;
+
+  @media (min-width: 1150px) {
+    margin-right: 57px;
+  }
 }
 
 .copyright__link {

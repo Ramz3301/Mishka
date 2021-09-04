@@ -5,6 +5,10 @@
     padding-top: 52px;
     padding-bottom: 27px;
   }
+
+  @media (min-width: 1150px) {
+    padding-top: 51px;
+  }
 }
 
 .name-filter__item {

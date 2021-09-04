@@ -10,6 +10,10 @@
     line-height: 30px;
     padding-top: 11px;
   }
+
+  @media (min-width: 1150px) {
+    margin-right: 3px;
+  }
 }
 
 .filter__button {
@@ -22,6 +26,11 @@
     padding: 16px 30px;
     line-height: 16px;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 49px;
+    margin-left: 5px;
   }
 }
 
@@ -43,5 +52,6 @@
 
   @media (min-width: 1150px) {
     justify-content: space-evenly;
+    padding-top: 1px;
   }
 }
