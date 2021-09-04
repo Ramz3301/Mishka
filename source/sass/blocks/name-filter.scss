@@ -2,8 +2,8 @@
   padding-bottom: 11px;
 
   @media (min-width: 768px) {
-    padding-top: 62px;
-    padding-bottom: 14px;
+    padding-top: 52px;
+    padding-bottom: 27px;
   }
 }
 
@@ -15,7 +15,7 @@
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: baseline;
-    margin-bottom: 36px;
+    margin-bottom: 24px;
   }
 }
 
@@ -34,13 +34,13 @@
   @media (min-width: 768px) {
     font-size: 19px;
     width: 374px;
-    padding-bottom: 12px;
+    // padding-bottom: 12px;
     padding-left: 16px;
   }
 
   @media (min-width: 1150px) {
     width: 570px;
-    padding-bottom: 12px;
+    // padding-bottom: 12px;
   }
 }
 
@@ -72,6 +72,7 @@
 
 .name-filter__title {
   @media (min-width: 768px) {
+    line-height: 50px;
     margin-right: 125px;
   }
 
