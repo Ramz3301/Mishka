@@ -20,20 +20,15 @@
 }
 
 .page-header::before {
-  @media (min-width: 768px) {
+  @media (max-width: 767px) {
     content: "";
     position: absolute;
-    width: 768px;
+    width: 100vw;
     height: 1px;
     background-color: var(--black);
     opacity: 0.1;
     bottom: -1px;
-    left: -50px;
     z-index: 10;
-  }
-
-  @media (min-width: 1150px) {
-    width: 1150px;
   }
 }
 

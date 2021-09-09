@@ -49,6 +49,17 @@
   }
 }
 
+.product-of-the-type::after {
+  @media (min-width: 768px) {
+    content: "";
+    position: absolute;
+    border-top: 1px solid var(--black);
+    opacity: 0.1;
+    top: 0;
+    width: 100vw;
+  }
+}
+
 .product-of-the-type__image {
   @media (max-width: 767px) {
     height: 283px;
